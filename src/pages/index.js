@@ -1,5 +1,8 @@
 import React from 'react'
+import { Content } from '../partials/Top'
 
-export default function Home () {
-  return <div>Hello world!</div>
+const Page = () => {
+  return <Content />
 }
+
+export default Page
