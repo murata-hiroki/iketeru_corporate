@@ -1,0 +1,45 @@
+.outer {
+	position: relative;
+	height: 718px;
+	padding-top: 120px;
+	background-color: #d3a9fd;
+	background-image: url(../../images/hero-bg.png);
+	background-size: cover;
+	background-position: center;
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: 84px;
+		left: 80px;
+		width: 280px;
+		height: 184px;
+		background-image: url(../../images/hero-left.png);
+		background-size: contain;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 70px;
+		right: 50px;
+		width: 354px;
+		height: 282px;
+		background-image: url(../../images/hero-right.png);
+		background-size: contain;
+	}
+}
+
+.title {
+	font-size: 64px;
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.catchcopy {
+	margin-top: 24px;
+	font-size: 30px;
+	line-height: 1.6;
+	text-align: center;
+}

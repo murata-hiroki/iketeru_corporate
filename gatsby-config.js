@@ -3,9 +3,11 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+const path = require('path')
 
 module.exports = {
   /* Your site config here */
+  jsxRuntime: 'automatic',
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
@@ -14,7 +16,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`
+        path: path.join(__dirname, 'src/images')
       }
     }
   ]
