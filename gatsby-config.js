@@ -6,6 +6,7 @@
 
 module.exports = {
   /* Your site config here */
+  jsxRuntime: 'automatic',
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
