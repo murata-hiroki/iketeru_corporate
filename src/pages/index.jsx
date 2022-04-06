@@ -1,7 +1,10 @@
-import { Content } from '../partials/Top'
+import '../scss/globals.scss'
+import Hero from '../components/Hero'
 
 const Page = () => {
-  return <Content />
+  return (
+    <Hero />
+  )
 }
 
 export default Page
