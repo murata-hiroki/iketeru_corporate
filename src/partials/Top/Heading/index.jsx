@@ -12,10 +12,10 @@ export const Heading = () => {
         </div>
       </div>
       <div>
-        <StaticImage src="../../../images/freepik--Device--inject-118.png" />
+        <StaticImage src='../../../images/freepik--Device--inject-118.png' />
       </div>
       <div>
-        <StaticImage src="../../../images/freepik--Device--inject-187.png" />
+        <StaticImage src='../../../images/freepik--Device--inject-187.png' />
       </div>
     </Container>
   )
