@@ -1,4 +1,5 @@
 import * as styles from './styles.module.scss'
+import Button from '../Button'
 
 const Hero = () => {
   return (
@@ -11,6 +12,9 @@ const Hero = () => {
         もっと高速に、<br />
         もっとセキュリティを強固に。
       </p>
+      <div className={styles.btnBox}>
+        <Button>無料お見積もりはこちら</Button>
+      </div>
     </div>
   )
 }
