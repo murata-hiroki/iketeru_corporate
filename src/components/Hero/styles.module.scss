@@ -4,6 +4,10 @@
   position: relative;
   height: 718px;
   background-color: $purple2;
+
+  @include sm {
+    height: 430px;
+  }
 }
 
 .bg {
@@ -19,6 +23,10 @@
 .inner {
   position: relative;
   padding-top: 120px;
+
+  @include sm {
+    padding-top: 60px;
+  }
 }
 
 .title {
@@ -26,6 +34,10 @@
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
+
+  @include sm {
+    font-size: 32px;
+  }
 }
 
 .catchcopy {
@@ -33,9 +45,14 @@
   font-size: 30px;
   line-height: 1.6;
   text-align: center;
+
+  @include sm {
+    font-size: 20px;
+  }
 }
 
 .btnBox {
+  padding: 0 20px;
   margin-top: 25px;
   text-align: center;
 }
@@ -43,15 +60,23 @@
 .figureLeft {
   position: absolute;
   bottom: 84px;
-  left: 80px;
+  right: calc(50% + 359px);
   width: 280px;
   height: 184px;
+
+  @include lg_down {
+    display: none;
+  }
 }
 
 .figureRight {
   position: absolute;
   bottom: 70px;
-  right: 50px;
+  left: calc(50% + 315px);
   width: 354px;
   height: 282px;
+
+  @include lg_down {
+    display: none;
+  }
 }
