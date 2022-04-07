@@ -1,32 +1,31 @@
+@use '../../scss/mixins.scss' as *;
+
 .outer {
   position: relative;
   height: 718px;
-  padding-top: 120px;
-  background-color: #d3a9fd;
-  background-image: url(../../images/hero-bg.png);
-  background-size: cover;
-  background-position: center;
+  background-color: $purple2;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 84px;
-    left: 80px;
-    width: 280px;
-    height: 184px;
-    background-image: url(../../images/hero-left.png);
-    background-size: contain;
+  @include sm {
+    height: 430px;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 70px;
-    right: 50px;
-    width: 354px;
-    height: 282px;
-    background-image: url(../../images/hero-right.png);
-    background-size: contain;
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.inner {
+  position: relative;
+  padding-top: 120px;
+
+  @include sm {
+    padding-top: 60px;
   }
 }
 
@@ -35,6 +34,10 @@
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
+
+  @include sm {
+    font-size: 32px;
+  }
 }
 
 .catchcopy {
@@ -42,9 +45,38 @@
   font-size: 30px;
   line-height: 1.6;
   text-align: center;
+
+  @include sm {
+    font-size: 20px;
+  }
 }
 
 .btnBox {
+  padding: 0 20px;
   margin-top: 25px;
   text-align: center;
+}
+
+.figureLeft {
+  position: absolute;
+  bottom: 84px;
+  right: calc(50% + 359px);
+  width: 280px;
+  height: 184px;
+
+  @include lg_down {
+    display: none;
+  }
+}
+
+.figureRight {
+  position: absolute;
+  bottom: 70px;
+  left: calc(50% + 315px);
+  width: 354px;
+  height: 282px;
+
+  @include lg_down {
+    display: none;
+  }
 }
