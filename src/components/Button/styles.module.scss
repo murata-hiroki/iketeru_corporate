@@ -1,14 +1,14 @@
 @use '../../scss/mixins.scss' as *;
 
 .btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 440px;
-	height: 86px;
-	border-radius: 4px;
-	background-color: $purple;
-	font-size: 24px;
-	color: $white;
-	text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 440px;
+  height: 86px;
+  border-radius: 4px;
+  background-color: $purple;
+  font-size: 24px;
+  color: $white;
+  text-decoration: none;
 }
