@@ -1,14 +1,14 @@
 import Section from '../Section'
 import Container from '../Container'
 import Heading2 from '../Heading2'
-import Footnote from '../Footnote'
+import ToFootnote from '../ToFootnote'
 
 const NewTechnologySection = () => {
   return (
     <Section color='purple'>
       <Container>
         <Heading2>
-          新時代の技術、Gatsby<Footnote />。
+          新時代の技術、Gatsby<ToFootnote />。
         </Heading2>
       </Container>
     </Section>
