@@ -4,6 +4,7 @@ import Heading2 from '../Heading2'
 import ToFootnote from '../ToFootnote'
 import Sentence from '../Sentence'
 import ProsOfGatsby from '../ProsOfGatsby'
+import Seo from '../Seo'
 
 const NewTechnologySection = () => {
   return (
@@ -19,6 +20,7 @@ const NewTechnologySection = () => {
           </p>
         </Sentence>
         <ProsOfGatsby />
+        <Seo />
       </Container>
     </Section>
   )
