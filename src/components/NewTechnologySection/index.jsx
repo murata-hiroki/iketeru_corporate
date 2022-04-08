@@ -3,6 +3,7 @@ import Container from '../Container'
 import Heading2 from '../Heading2'
 import ToFootnote from '../ToFootnote'
 import Sentence from '../Sentence'
+import ProsOfGatsby from '../ProsOfGatsby'
 
 const NewTechnologySection = () => {
   return (
@@ -17,6 +18,7 @@ const NewTechnologySection = () => {
             上記で説明したような、WordPressが抱える課題を解決できることから、今、注目されている新しい技術です。
           </p>
         </Sentence>
+        <ProsOfGatsby />
       </Container>
     </Section>
   )
