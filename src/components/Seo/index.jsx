@@ -2,6 +2,7 @@ import Heading3 from '../Heading3'
 import SubSection from '../SubSection'
 import Sentence from '../Sentence'
 import Marker from '../Marker'
+import Attention from '../Attention'
 
 const Seo = () => {
   return (
@@ -14,6 +15,11 @@ const Seo = () => {
           Gatsbyへの移行で、サイトを高速化しませんか？
         </p>
       </Sentence>
+      <Attention
+        items={[
+          '必ず検索順位が上がることを保証するものではありません'
+        ]}
+      />
     </SubSection>
   )
 }
