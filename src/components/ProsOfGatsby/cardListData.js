@@ -1,5 +1,10 @@
+import Icon1 from '../../images/pros-icon1.svg'
+import Icon2 from '../../images/pros-icon2.svg'
+import Icon3 from '../../images/pros-icon3.svg'
+
 const cardListData = [
   {
+    icon: <Icon1 />,
     title: '高速',
     desc: (
       <>
@@ -9,6 +14,7 @@ const cardListData = [
     )
   },
   {
+    icon: <Icon2 />,
     title: 'セキュリティの向上',
     desc: (
       <>
@@ -18,6 +24,7 @@ const cardListData = [
     )
   },
   {
+    icon: <Icon3 />,
     title: 'サーバーコストの削減',
     desc: (
       <>

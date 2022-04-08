@@ -7,6 +7,7 @@ const Cards = ({ cards }) => {
       {cards.map(card =>
         <div key={card.title} className={styles.cardBox}>
           <Card
+            icon={card.icon}
             title={card.title}
             desc={card.desc}
           />
