@@ -2,6 +2,7 @@ import Section from '../Section'
 import Container from '../Container'
 import Heading2 from '../Heading2'
 import ToFootnote from '../ToFootnote'
+import Sentence from '../Sentence'
 
 const NewTechnologySection = () => {
   return (
@@ -10,6 +11,9 @@ const NewTechnologySection = () => {
         <Heading2>
           新時代の技術、Gatsby<ToFootnote />。
         </Heading2>
+        <Sentence>
+          <p>Gatsbyとは、高速なWebサイトを構築できるシステムの一つです。上記で説明したような、WordPressが抱える課題を解決できることから、今、注目されている新しい技術です。</p>
+        </Sentence>
       </Container>
     </Section>
   )
