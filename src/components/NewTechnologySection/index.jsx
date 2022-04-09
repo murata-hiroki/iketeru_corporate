@@ -7,6 +7,7 @@ import ProsOfGatsby from '../ProsOfGatsby'
 import Seo from '../Seo'
 import Compare from '../Compare'
 import Migration from '../Migration'
+import Cta from '../Cta'
 
 const NewTechnologySection = () => {
   return (
@@ -25,6 +26,7 @@ const NewTechnologySection = () => {
         <Seo />
         <Compare />
         <Migration />
+        <Cta />
       </Container>
     </Section>
   )
