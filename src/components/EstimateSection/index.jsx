@@ -1,4 +1,5 @@
 import Container from '../Container'
+import Cta from '../Cta'
 import Heading2 from '../Heading2'
 import Section from '../Section'
 
@@ -7,6 +8,7 @@ const EstimateSection = () => {
     <Section color='purple'>
       <Container>
         <Heading2>無料お見積りはこちらから</Heading2>
+        <Cta hideBtn />
       </Container>
     </Section>
   )
