@@ -1,4 +1,4 @@
-const Sentence = ({ children }) => {
+const Sentence = ({ children, center = false }) => {
   return <div>{children}</div>
 }
 

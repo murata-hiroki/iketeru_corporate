@@ -4,6 +4,8 @@ import Section from '../Section'
 import Sentence from '../Sentence'
 import ToFootnote from '../ToFootnote'
 import ConsOfWP from '../ConsOfWP'
+import Large from '../Large'
+import Marker from '../Marker'
 
 const WPSection = () => {
   return (
@@ -20,6 +22,13 @@ const WPSection = () => {
           </p>
         </Sentence>
         <ConsOfWP />
+        <Sentence center>
+          <p>速度面やセキュリティ面で不安のあるWordPress、あなたは使い続けますか？</p>
+          <p>
+            それでもWordPressを使い続けたいという方は<br />
+            <Large><Marker>ここから先は読む必要はありません</Marker></Large>
+          </p>
+        </Sentence>
       </Container>
     </Section>
   )
