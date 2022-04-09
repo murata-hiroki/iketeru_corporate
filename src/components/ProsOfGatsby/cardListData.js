@@ -1,6 +1,6 @@
-import Icon1 from '../../images/pros-icon1.svg'
-import Icon2 from '../../images/pros-icon2.svg'
-import Icon3 from '../../images/pros-icon3.svg'
+import Icon1 from '../../inline-svg/pros-icon1.svg'
+import Icon2 from '../../inline-svg/pros-icon2.svg'
+import Icon3 from '../../inline-svg/pros-icon3.svg'
 
 const cardListData = [
   {
