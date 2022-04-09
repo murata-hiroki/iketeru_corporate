@@ -13,6 +13,10 @@ const Migration = () => {
         <ArrowRight />
         <img src={gatsbyLogo} alt='Gatsby' />
       </div>
+      <p>
+        イケテルシステムは、WordPress製のサイトをGatsbyに移行するサービスを展開しています。<br />
+        お気軽にご相談ください！
+      </p>
     </SubSection>
   )
 }
