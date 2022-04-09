@@ -3,7 +3,7 @@ import Heading3 from '../Heading3'
 import Cards from '../Cards'
 import Sentence from '../Sentence'
 import Marker from '../Marker'
-import cardListData from './cardListData'
+import { cardListData } from './cardListData'
 
 const ProsOfGatsby = () => {
   return (

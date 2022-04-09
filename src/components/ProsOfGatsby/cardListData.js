@@ -2,7 +2,7 @@ import Icon1 from '../../inline-svg/pros-icon1.svg'
 import Icon2 from '../../inline-svg/pros-icon2.svg'
 import Icon3 from '../../inline-svg/pros-icon3.svg'
 
-const cardListData = [
+export const cardListData = [
   {
     icon: <Icon1 />,
     title: '高速',
@@ -34,5 +34,3 @@ const cardListData = [
     )
   }
 ]
-
-export default cardListData

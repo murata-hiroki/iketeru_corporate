@@ -3,6 +3,7 @@ import Heading2 from '../Heading2'
 import Section from '../Section'
 import Sentence from '../Sentence'
 import ToFootnote from '../ToFootnote'
+import ConsOfWP from '../ConsOfWP'
 
 const WPSection = () => {
   return (
@@ -18,6 +19,7 @@ const WPSection = () => {
             しかし、近年、WordPressのセキュリティに対する不安や、スピード面での課題が問題視されるようになってきました。
           </p>
         </Sentence>
+        <ConsOfWP />
       </Container>
     </Section>
   )
