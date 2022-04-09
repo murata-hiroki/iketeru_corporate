@@ -5,6 +5,7 @@ import ToFootnote from '../ToFootnote'
 import Sentence from '../Sentence'
 import ProsOfGatsby from '../ProsOfGatsby'
 import Seo from '../Seo'
+import Compare from '../Compare'
 
 const NewTechnologySection = () => {
   return (
@@ -21,6 +22,7 @@ const NewTechnologySection = () => {
         </Sentence>
         <ProsOfGatsby />
         <Seo />
+        <Compare />
       </Container>
     </Section>
   )
