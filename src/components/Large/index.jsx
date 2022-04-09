@@ -1,4 +1,4 @@
-const Large = ({children}) => {
+const Large = ({ children }) => {
   return <span>{children}</span>
 }
 
