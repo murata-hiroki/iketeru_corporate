@@ -16,6 +16,11 @@
 
 .copyright {
   font-size: 14px;
+
+  @include sm {
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 
 .lower {
