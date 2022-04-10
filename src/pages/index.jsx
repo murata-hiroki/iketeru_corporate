@@ -5,6 +5,7 @@ import Faq from '../components/Faq'
 import EstimateSection from '../components/EstimateSection'
 import WPSection from '../components/WPSection'
 import TeamSection from '../components/TeamSection'
+import Footer from '../components/Footer'
 
 const Page = () => {
   return (
@@ -15,6 +16,7 @@ const Page = () => {
       <Faq />
       <EstimateSection />
       <TeamSection />
+      <Footer />
     </>
   )
 }
