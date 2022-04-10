@@ -2,7 +2,7 @@ import * as styles from './styles.module.scss'
 
 const Footer = () => {
   return (
-    <footer className={styles.footer} />
+    <footer id='footer' className={styles.footer} />
   )
 }
 
