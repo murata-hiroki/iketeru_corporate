@@ -1,6 +1,6 @@
 import * as styles from './styles.module.scss'
 import { StaticImage } from 'gatsby-plugin-image'
-import Button from '../Button'
+import ScrollButton from '../ScrollButton'
 
 const Cta = ({ hideBtn = false }) => {
   return (
@@ -21,7 +21,7 @@ const Cta = ({ hideBtn = false }) => {
       </div>
       {hideBtn || (
         <div className={styles.btnBox}>
-          <Button>無料お見積もりはこちら</Button>
+          <ScrollButton target='estimate'>無料お見積もりはこちら</ScrollButton>
         </div>
       )}
     </div>

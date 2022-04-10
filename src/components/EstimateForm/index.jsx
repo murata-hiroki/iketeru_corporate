@@ -38,7 +38,7 @@ const EstimateForm = () => {
         placeholder='備考・ご要望等をご記入ください。'
         multiLine
       />
-      <Button>送信する</Button>
+      <Button type='submit'>送信する</Button>
     </form>
   )
 }
