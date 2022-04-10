@@ -51,3 +51,11 @@ $break_lg: $pc_width + ($pc_padding * 2);
     text-decoration: underline;
   }
 }
+
+// Gatsbyの画像のフェードアニメーションを強制的に無効化する
+// （スコアアップが期待できる）
+@mixin noFade {
+  img {
+    opacity: 1 !important;
+  }
+}
