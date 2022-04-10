@@ -1,0 +1,6 @@
+@use '../../scss/mixins.scss' as *;
+
+.footer {
+  padding: 40px 0;
+  background-color: $black;
+}
