@@ -1,6 +1,7 @@
 import Chief from '../Chief'
 import Container from '../Container'
 import Heading2 from '../Heading2'
+import Migration from '../Migration'
 import Section from '../Section'
 import Sentence from '../Sentence'
 
@@ -17,6 +18,7 @@ const TeamSection = () => {
           </p>
         </Sentence>
         <Chief />
+        <Migration />
       </Container>
     </Section>
   )
