@@ -1,6 +1,6 @@
 import * as styles from './styles.module.scss'
-import Button from '../Button'
 import HeroBG from '../HeroBG'
+import ScrollButton from '../ScrollButton'
 
 const Hero = () => {
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
           もっとセキュリティを強固に。
         </p>
         <div className={styles.btnBox}>
-          <Button>無料お見積もりはこちら</Button>
+          <ScrollButton target='estimate'>無料お見積もりはこちら</ScrollButton>
         </div>
       </div>
     </div>
