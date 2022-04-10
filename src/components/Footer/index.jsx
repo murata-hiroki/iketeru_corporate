@@ -7,6 +7,7 @@ const Footer = () => {
     <footer id='footer' className={styles.footer}>
       <Container>
         <Footnote />
+        <p>© 2022 イケテルシステム</p>
       </Container>
     </footer>
   )
