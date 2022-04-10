@@ -1,17 +1,11 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import * as styles from './styles.module.scss'
 import Button from '../Button'
+import HeroBG from '../HeroBG'
 
 const Hero = () => {
   return (
     <div className={styles.outer}>
-      <StaticImage src='../../images/hero-bg.png' className={styles.bg} />
-      <StaticImage src='../../images/hero-left.png' className={styles.figureLeft} />
-      <StaticImage
-        src='../../images/hero-right.png'
-        className={styles.figureRight}
-        placeholder='tracedSVG'
-      />
+      <HeroBG />
       <div className={styles.inner}>
         <h1 className={styles.title}>
           まだWordPressを<br />使っている方必見！！
