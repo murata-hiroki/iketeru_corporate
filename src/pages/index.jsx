@@ -4,6 +4,7 @@ import NewTechnologySection from '../components/NewTechnologySection'
 import Faq from '../components/Faq'
 import EstimateSection from '../components/EstimateSection'
 import WPSection from '../components/WPSection'
+import TeamSection from '../components/TeamSection'
 
 const Page = () => {
   return (
@@ -13,6 +14,7 @@ const Page = () => {
       <NewTechnologySection />
       <Faq />
       <EstimateSection />
+      <TeamSection />
     </>
   )
 }
