@@ -8,8 +8,12 @@ const Footer = () => {
     <footer id='footer'>
       <div className={styles.upper}>
         <Container>
-          <Footnote />
-          <p>© 2022 イケテルシステム</p>
+          <div className={styles.upperInner}>
+            <Footnote />
+            <p className={styles.copyright}>
+              © 2022 イケテルシステム
+            </p>
+          </div>
         </Container>
       </div>
       <div className={styles.lower}>
