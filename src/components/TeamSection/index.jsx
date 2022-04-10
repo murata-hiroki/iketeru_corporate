@@ -1,3 +1,4 @@
+import Chief from '../Chief'
 import Container from '../Container'
 import Heading2 from '../Heading2'
 import Section from '../Section'
@@ -15,6 +16,7 @@ const TeamSection = () => {
             経験豊富なリーダーが率いるチームですので、安心してお任せいただけます！
           </p>
         </Sentence>
+        <Chief />
       </Container>
     </Section>
   )
