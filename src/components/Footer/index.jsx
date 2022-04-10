@@ -1,14 +1,20 @@
 import * as styles from './styles.module.scss'
 import Container from '../Container'
 import Footnote from '../Footnote'
+import logo from '../../images/logo.svg'
 
 const Footer = () => {
   return (
-    <footer id='footer' className={styles.footer}>
-      <Container>
-        <Footnote />
-        <p>© 2022 イケテルシステム</p>
-      </Container>
+    <footer id='footer'>
+      <div className={styles.upper}>
+        <Container>
+          <Footnote />
+          <p>© 2022 イケテルシステム</p>
+        </Container>
+      </div>
+      <div className={styles.lower}>
+        <img src={logo} alt='イケテルシステム' />
+      </div>
     </footer>
   )
 }

@@ -1,7 +1,12 @@
 @use '../../scss/mixins.scss' as *;
 
-.footer {
+.upper {
   padding: 40px 0;
   background-color: $black;
   color: $white;
+}
+
+.lower {
+  padding: 30px 20px;
+  text-align: center;
 }
