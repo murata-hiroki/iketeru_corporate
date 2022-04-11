@@ -1,5 +1,10 @@
+import * as styles from './styles.module.scss'
+
 const Sentence = ({ children, center = false }) => {
-  return <div>{children}</div>
+  const cls = center
+    ? `${styles.sentence} ${styles.center}`
+    : styles.sentence
+  return <div className={cls}>{children}</div>
 }
 
 export default Sentence
