@@ -8,7 +8,7 @@ const Hero = () => {
       <HeroBG />
       <div className={styles.inner}>
         <h1 className={styles.title}>
-          まだWordPressを<br />使っている方必見！！
+          まだWordPressを<br />ご利用の方、必見！！
         </h1>
         <p className={styles.catchcopy}>
           あなたのサイト、<br />
