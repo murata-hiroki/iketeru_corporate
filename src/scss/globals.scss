@@ -23,3 +23,8 @@ body {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+a {
+  color: $purple;
+  text-decoration: none;
+}
