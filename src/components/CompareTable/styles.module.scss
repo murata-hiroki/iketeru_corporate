@@ -1,0 +1,99 @@
+@use '../../scss/mixins.scss' as *;
+
+.wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  min-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+}
+
+.gatsbyCol {
+  border: 4px solid $purple;
+}
+
+.bodyRow {
+  &:nth-child(odd) {
+    background-color: $white;
+  }
+  &:nth-child(even) {
+    background-color: $purple3;
+  }
+  &:last-child {
+    border-bottom: 2px solid $gray;
+  }
+}
+
+.emptyHead {
+  width: 280px;
+  border-bottom: 2px solid $gray;
+
+  @include lg_down {
+    width: 180px;
+  }
+  @include sm {
+    width: 120px;
+  }
+}
+
+%head {
+  width: 300px;
+  padding: 10px 0;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+  @include lg_down {
+    width: 250px;
+  }
+  @include sm {
+    width: 200px;
+  }
+}
+
+.gatsbyHead {
+  @extend %head;
+  background-color: $purple;
+  color: $white;
+}
+
+.wpHead {
+  @extend %head;
+  background-color: $gray;
+  border-right: 2px solid $gray;
+}
+
+.itemHead {
+  padding: 15px 10px;
+  border-left: 2px solid $gray;
+  font-size: 22px;
+
+  @include lg_down {
+    font-size: 18px;
+  }
+  @include sm {
+    font-size: 16px;
+  }
+}
+
+.desc {
+  padding: 15px 20px;
+  font-size: 18px;
+
+  @include lg_down {
+    font-size: 16px;
+  }
+  @include sm {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  &:last-child {
+    border-right: 2px solid $gray;
+  }
+}
