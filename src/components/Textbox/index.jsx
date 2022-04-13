@@ -1,3 +1,5 @@
+import * as styles from './styles.module.scss'
+
 const Textbox = ({
   id,
   name,
@@ -13,6 +15,7 @@ const Textbox = ({
         type='text'
         id={id}
         name={name}
+        className={styles.input}
         placeholder={placeholder}
         onChange={onChange}
         value={value}
@@ -24,6 +27,7 @@ const Textbox = ({
       <textarea
         id={id}
         name={name}
+        className={styles.textarea}
         placeholder={placeholder}
         onChange={onChange}
         value={value}
