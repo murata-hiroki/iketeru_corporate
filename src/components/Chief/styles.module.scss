@@ -1,0 +1,86 @@
+@use '../../scss/mixins.scss' as *;
+
+.chief {
+  @include sm_up {
+    display: flex;
+  }
+}
+
+.media {
+  flex: none;
+  text-align: center;
+}
+
+.image {
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 700;
+
+  span + span {
+    margin-left: 20px;
+  }
+}
+
+.content {
+  margin-left: 80px;
+
+  @include lg_down {
+    margin-left: 30px;
+  }
+  @include sm {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.history {
+  li {
+    position: relative;
+    list-style-type: none;
+    padding: 0 0 30px 50px;
+    font-size: 22px;
+
+    @include sm {
+      padding: 0 0 20px 35px;
+      font-size: 16px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 5px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: $purple2;
+
+      @include sm {
+        top: 0;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 11px;
+      width: 2px;
+      bottom: -10px;
+      background-color: $gray;
+    }
+
+    &.current {
+      &::before {
+        background-color: $purple;
+      }
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
