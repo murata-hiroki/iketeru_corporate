@@ -2,7 +2,10 @@ const Textbox = ({
   id,
   name,
   placeholder,
-  multiLine = false
+  multiLine = false,
+  onChange,
+  value,
+  ...props
 }) => {
   if (!multiLine) {
     return (
@@ -11,6 +14,9 @@ const Textbox = ({
         id={id}
         name={name}
         placeholder={placeholder}
+        onChange={onChange}
+        value={value}
+        {...props}
       />
     )
   } else {
@@ -19,6 +25,9 @@ const Textbox = ({
         id={id}
         name={name}
         placeholder={placeholder}
+        onChange={onChange}
+        value={value}
+        {...props}
       />
     )
   }
