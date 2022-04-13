@@ -8,7 +8,7 @@ body {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "Roboto",
     "Hiragino Kaku Gothic ProN", "Hiragino Sans",
     "YuGothic", "Yu Gothic", "Meiryo", sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   box-sizing: border-box;
   color: $black;
 }
@@ -22,4 +22,9 @@ body {
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+a {
+  color: $purple;
+  text-decoration: none;
 }

@@ -1,3 +1,4 @@
+import * as styles from './styles.module.scss'
 import Container from '../Container'
 import Heading2 from '../Heading2'
 import Section from '../Section'
@@ -12,14 +13,18 @@ const Faq = () => {
         <Heading2>よくあるご質問</Heading2>
         <div>
           {faqList.map(faqItem =>
-            <section key={faqItem.q}>
-              <h3>
-                <IconQ />
-                {faqItem.q}
+            <section key={faqItem.q} className={styles.item}>
+              <h3 className={styles.title}>
+                <span className={styles.textInner}>
+                  <IconQ className={styles.iconQ} />
+                  {faqItem.q}
+                </span>
               </h3>
-              <p>
-                <IconA />
-                {faqItem.a}
+              <p className={styles.answer}>
+                <span className={styles.textInner}>
+                  <IconA className={styles.iconA} />
+                  {faqItem.a}
+                </span>
               </p>
             </section>
           )}
