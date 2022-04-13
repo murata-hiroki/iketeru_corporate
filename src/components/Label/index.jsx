@@ -1,3 +1,5 @@
+import * as styles from './styles.module.scss'
+
 const Label = ({
   htmlFor,
   labelText,
@@ -5,10 +7,10 @@ const Label = ({
   comment = null
 }) => {
   return (
-    <label htmlFor={htmlFor}>
+    <label htmlFor={htmlFor} className={styles.label}>
       {labelText}
-      {required && <span>必須</span>}
-      {comment && <span>{comment}</span>}
+      {required && <span className={styles.required}>必須</span>}
+      {comment && <span className={styles.comment}>{comment}</span>}
     </label>
   )
 }

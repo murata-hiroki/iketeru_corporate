@@ -13,7 +13,7 @@ const InputField = ({
   ...props
 }) => {
   return (
-    <div>
+    <>
       <Label
         htmlFor={id}
         labelText={labelText}
@@ -28,7 +28,7 @@ const InputField = ({
         value={value}
         {...props}
       />
-    </div>
+    </>
   )
 }
 

@@ -1,3 +1,4 @@
+import * as styles from './styles.module.scss'
 import { useState } from 'react'
 import axios from 'axios'
 import Button from '../Button'
@@ -66,52 +67,64 @@ const EstimateForm = () => {
   }
 
   return (
-    <form action='' onSubmit={handleSubmit}>
-      <InputField
-        labelText='氏名'
-        required
-        id='estimate_name'
-        name='name'
-        placeholder='山田 太郎'
-        onChange={e => setName(e.target.value)}
-        value={name}
-      />
-      <InputField
-        labelText='会社名・屋号'
-        id='estimate_company'
-        name='company'
-        placeholder='サンプル株式会社'
-        onChange={e => setCompany(e.target.value)}
-        value={company}
-      />
-      <InputField
-        labelText='メールアドレス'
-        required
-        id='estimate_email'
-        name='email'
-        placeholder='example@example.com'
-        onChange={e => setEmail(e.target.value)}
-        value={email}
-      />
-      <InputField
-        labelText='サイトURL'
-        comment='（移行前のウェブサイトのURL）'
-        id='estimate_url'
-        name='url'
-        placeholder='https://example.com'
-        onChange={e => setUrl(e.target.value)}
-        value={url}
-      />
-      <InputField
-        labelText='備考・ご要望等'
-        id='estimate_comment'
-        name='comment'
-        placeholder='備考・ご要望等をご記入ください。'
-        multiLine
-        onChange={e => setComment(e.target.value)}
-        value={comment}
-      />
-      <Button type='submit'>送信する</Button>
+    <form className={styles.form} onSubmit={handleSubmit}>
+      <div className={styles.inputBox}>
+        <InputField
+          labelText='氏名'
+          required
+          id='estimate_name'
+          name='name'
+          placeholder='山田 太郎'
+          onChange={e => setName(e.target.value)}
+          value={name}
+        />
+      </div>
+      <div className={styles.inputBox}>
+        <InputField
+          labelText='会社名・屋号'
+          id='estimate_company'
+          name='company'
+          placeholder='サンプル株式会社'
+          onChange={e => setCompany(e.target.value)}
+          value={company}
+        />
+      </div>
+      <div className={styles.inputBox}>
+        <InputField
+          labelText='メールアドレス'
+          required
+          id='estimate_email'
+          name='email'
+          placeholder='example@example.com'
+          onChange={e => setEmail(e.target.value)}
+          value={email}
+        />
+      </div>
+      <div className={styles.inputBox}>
+        <InputField
+          labelText='サイトURL'
+          comment='（移行前のウェブサイトのURL）'
+          id='estimate_url'
+          name='url'
+          placeholder='https://example.com'
+          onChange={e => setUrl(e.target.value)}
+          value={url}
+        />
+      </div>
+      <div className={styles.inputBox}>
+        <InputField
+          labelText='備考・ご要望等'
+          id='estimate_comment'
+          name='comment'
+          placeholder='備考・ご要望等をご記入ください。'
+          multiLine
+          onChange={e => setComment(e.target.value)}
+          value={comment}
+        />
+      </div>
+      <div className={styles.btnBox}>
+        <Button type='submit'>送信する</Button>
+      </div>
     </form>
   )
 }
