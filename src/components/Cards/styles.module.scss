@@ -11,4 +11,9 @@
   @include sm_up {
     width: 30%;
   }
+  @include sm {
+    &:nth-child(n+2) {
+      margin-top: 40px;
+    }
+  }
 }

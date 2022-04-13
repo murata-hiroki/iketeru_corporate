@@ -1,0 +1,20 @@
+@use '../../scss/mixins.scss' as *;
+
+.icon {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.desc {
+  font-size: 16px;
+  ul {
+    margin-left: 1.5em;
+  }
+}
