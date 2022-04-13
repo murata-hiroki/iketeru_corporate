@@ -9,7 +9,7 @@ const InputField = ({
   name,
   placeholder = null,
   multiLine = false,
-  value ='',
+  value = '',
   ...props
 }) => {
   return (

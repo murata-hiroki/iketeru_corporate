@@ -1,34 +1,33 @@
-import React,{useState}from 'react'
-import axios from 'axios';
+import { useState } from 'react'
+import axios from 'axios'
 import Button from '../Button'
 import InputField from '../InputField'
-import { navigate } from "gatsby"
+import { navigate } from 'gatsby'
 
 const EstimateForm = () => {
   // 項目を設定
-  const [company, setCompany] = useState("");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [url,setUrl] = useState("")
-  const [comment, setComment] = useState("");
+  const [company, setCompany] = useState('')
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [url, setUrl] = useState('')
+  const [comment, setComment] = useState('')
 
   const handleSubmit = async (e) => {
     // デフォルトの動作をブロック
-    e.preventDefault();
-    
+    e.preventDefault()
+
     // フォーム送信へ
-    await submit_hubspot_form(name, company, email,url,comment);
+    await submitHubspotForm(name, company, email, url, comment)
   }
 
-  const submit_hubspot_form = async (name, company, email,url, comment) => {
-    const portalId = '21765463';
-    const formGuid = '3eac8334-a797-44d8-b6d1-3462bedec7a7';
+  const submitHubspotForm = async (name, company, email, url, comment) => {
+    const portalId = '21765463'
+    const formGuid = '3eac8334-a797-44d8-b6d1-3462bedec7a7'
     const config = {
       headers: {
-        'Message-Type': 'application/json',
-      },
+        'Message-Type': 'application/json'
+      }
     }
-
 
     return await axios.post(`https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`,
       {
@@ -37,33 +36,33 @@ const EstimateForm = () => {
         fields: [
           {
             name: 'name',
-            value: name,
+            value: name
           },
           {
             name: 'company',
-            value: company,
+            value: company
           },
           {
             name: 'email',
-            value: email,
+            value: email
           },
           {
-            name:'url',
-            value:url,
+            name: 'url',
+            value: url
           },
           {
             name: 'comment',
-            value: comment,
-          },
-        ],
+            value: comment
+          }
+        ]
       },
 
       config
     ).then(() => {
       console.log('送信成功')
       // フォーム送信後にリダイレクトする
-      navigate("/")
-    });
+      navigate('/')
+    })
   }
 
   return (
