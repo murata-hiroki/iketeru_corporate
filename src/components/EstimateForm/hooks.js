@@ -23,11 +23,7 @@ export const useEstimateForm = () => {
       }
     })
 
-    const payload = {
-      portalId,
-      formGuid,
-      fields
-    }
+    const payload = { portalId, formGuid, fields }
 
     axios.post(url, payload, config)
       .then(() => {
