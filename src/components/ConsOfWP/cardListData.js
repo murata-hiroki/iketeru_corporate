@@ -26,7 +26,7 @@ export const cardListData = [
   },
   {
     icon: <Icon3 />,
-    title: 'サーバーコストの削減',
+    title: '運用・管理が煩雑',
     desc: (
       <>
         <p>WordPressのセキュリティを守るためには、各種ソフトウェアの定期的なアップデートが必要になります。</p>

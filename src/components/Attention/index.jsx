@@ -1,6 +1,8 @@
+import * as styles from './styles.module.scss'
+
 const Attention = ({ items }) => {
   return (
-    <ul>
+    <ul className={styles.attention}>
       {items.map(item => <li key={item}>{item}</li>)}
     </ul>
   )
