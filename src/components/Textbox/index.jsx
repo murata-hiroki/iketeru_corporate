@@ -17,9 +17,6 @@ const Textbox = ({
         name={name}
         className={styles.input}
         placeholder={placeholder}
-        onChange={onChange}
-        value={value}
-        {...props}
       />
     )
   } else {
@@ -29,9 +26,6 @@ const Textbox = ({
         name={name}
         className={styles.textarea}
         placeholder={placeholder}
-        onChange={onChange}
-        value={value}
-        {...props}
       />
     )
   }

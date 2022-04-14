@@ -8,9 +8,7 @@ const InputField = ({
   id,
   name,
   placeholder = null,
-  multiLine = false,
-  value = '',
-  ...props
+  multiLine = false
 }) => {
   return (
     <>
@@ -25,8 +23,6 @@ const InputField = ({
         name={name}
         placeholder={placeholder}
         multiLine={multiLine}
-        value={value}
-        {...props}
       />
     </>
   )
