@@ -7,6 +7,7 @@ const HeroBG = () => {
       <div className={styles.bg}>
         <StaticImage
           src='../../images/hero-bg.png'
+          alt=''
           loading='eager'
           placeholder='none'
           layout='fullWidth'
@@ -16,6 +17,7 @@ const HeroBG = () => {
       <div className={styles.left}>
         <StaticImage
           src='../../images/hero-left.png'
+          alt=''
           loading='eager'
           placeholder='none'
           layout='fixed'
@@ -26,6 +28,7 @@ const HeroBG = () => {
       <div className={styles.right}>
         <StaticImage
           src='../../images/hero-right.png'
+          alt=''
           loading='eager'
           placeholder='none'
           layout='fixed'
