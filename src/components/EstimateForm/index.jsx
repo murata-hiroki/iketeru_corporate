@@ -1,18 +1,18 @@
 import { useForm } from 'react-hook-form'
 import * as styles from './styles.module.scss'
+import { useEstimateForm } from './hooks'
 import Button from '../Button'
 import InputField from '../InputField'
+import Alert from '../Alert'
 
 const EstimateForm = () => {
+  const { status, message, onSubmit } = useEstimateForm()
+
   const {
     register,
     handleSubmit,
     formState: { errors }
   } = useForm({ mode: 'onChange' })
-
-  const onSubmit = data => {
-    console.log(data)
-  }
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
@@ -56,9 +56,9 @@ const EstimateForm = () => {
         <InputField
           labelText='サイトURL'
           comment='（移行前のウェブサイトのURL）'
-          id='estimate_url'
+          id='estimate_website'
           placeholder='https://example.com'
-          registerReturn={register('url')}
+          registerReturn={register('website')}
         />
       </div>
       <div className={styles.inputBox}>
@@ -73,6 +73,7 @@ const EstimateForm = () => {
       <div className={styles.btnBox}>
         <Button type='submit'>送信する</Button>
       </div>
+      {status && <Alert status={status}>{message}</Alert>}
     </form>
   )
 }
