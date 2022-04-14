@@ -5,9 +5,7 @@ const Textbox = ({
   name,
   placeholder,
   multiLine = false,
-  onChange,
-  value,
-  ...props
+  registerReturn
 }) => {
   if (!multiLine) {
     return (
@@ -17,6 +15,7 @@ const Textbox = ({
         name={name}
         className={styles.input}
         placeholder={placeholder}
+        {...registerReturn}
       />
     )
   } else {
@@ -26,6 +25,7 @@ const Textbox = ({
         name={name}
         className={styles.textarea}
         placeholder={placeholder}
+        {...registerReturn}
       />
     )
   }
