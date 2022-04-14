@@ -6,7 +6,12 @@ import InputField from '../InputField'
 import Alert from '../Alert'
 
 const EstimateForm = () => {
-  const { status, message, onSubmit } = useEstimateForm()
+  const {
+    status,
+    message,
+    disabled,
+    onSubmit
+  } = useEstimateForm()
 
   const {
     register,
@@ -71,7 +76,7 @@ const EstimateForm = () => {
         />
       </div>
       <div className={styles.btnBox}>
-        <Button type='submit'>送信する</Button>
+        <Button type='submit' disabled={disabled}>送信する</Button>
       </div>
       {status && <Alert status={status}>{message}</Alert>}
     </form>

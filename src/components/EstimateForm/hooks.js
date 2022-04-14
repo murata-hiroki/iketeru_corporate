@@ -14,6 +14,7 @@ const config = {
 export const useEstimateForm = () => {
   const [status, setStatus] = useState()
   const [message, setMessage] = useState()
+  const [disabled, setDisabled] = useState(false)
 
   const onSubmit = data => {
     const fields = Object.keys(data).map(name => {
@@ -25,6 +26,8 @@ export const useEstimateForm = () => {
 
     const payload = { portalId, formGuid, fields }
 
+    setDisabled(true)
+
     axios.post(url, payload, config)
       .then(() => {
         setStatus('success')
@@ -34,7 +37,8 @@ export const useEstimateForm = () => {
         setStatus('error')
         setMessage('エラーが発生しました。時間をおいて再度お試しください。')
       })
+      .finally(() => setDisabled(false))
   }
 
-  return { status, message, onSubmit }
+  return { status, message, disabled, onSubmit }
 }
