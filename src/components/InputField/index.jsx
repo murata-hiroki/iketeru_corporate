@@ -1,3 +1,4 @@
+import * as styles from './styles.module.scss'
 import Label from '../Label'
 import Textbox from '../Textbox'
 
@@ -6,11 +7,10 @@ const InputField = ({
   comment = null,
   required = false,
   id,
-  name,
   placeholder = null,
   multiLine = false,
-  value = '',
-  ...props
+  registerReturn,
+  error = null
 }) => {
   return (
     <>
@@ -22,12 +22,11 @@ const InputField = ({
       />
       <Textbox
         id={id}
-        name={name}
         placeholder={placeholder}
         multiLine={multiLine}
-        value={value}
-        {...props}
+        registerReturn={registerReturn}
       />
+      {error && <p className={styles.error}>{error.message}</p>}
     </>
   )
 }

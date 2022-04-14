@@ -19,4 +19,9 @@
     height: 60px;
     font-size: 18px;
   }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
 }
