@@ -4,11 +4,12 @@ const Button = ({
   children,
   type = 'link',
   href = null,
-  onClick = null
+  onClick = null,
+  disabled = false
 }) => {
   if (type === 'submit') {
     return (
-      <button type='submit' className={styles.btn}>
+      <button type='submit' className={styles.btn} disabled={disabled}>
         {children}
       </button>
     )
