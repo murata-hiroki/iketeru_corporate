@@ -6,10 +6,12 @@ import EstimateSection from '../components/EstimateSection'
 import WPSection from '../components/WPSection'
 import TeamSection from '../components/TeamSection'
 import Footer from '../components/Footer'
+import Metatags from '../components/Metatags'
 
 const Page = () => {
   return (
     <>
+      <Metatags />
       <Hero />
       <WPSection />
       <NewTechnologySection />
