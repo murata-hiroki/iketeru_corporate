@@ -1,0 +1,25 @@
+@use '../../scss/mixins.scss' as *;
+
+%textbox {
+  width: 100%;
+  padding: 15px;
+  border-radius: 0;
+  border: 1px solid $black;
+  font-size: 22px;
+  line-height: 1.6;
+  font-family: inherit;
+
+  @include sm {
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
+.input {
+  @extend %textbox;
+}
+
+.textarea {
+  @extend %textbox;
+  height: 300px;
+}

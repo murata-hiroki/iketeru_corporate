@@ -1,0 +1,25 @@
+@use '../../scss/mixins.scss' as *;
+
+.cards {
+  @include sm_up {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.cardBox {
+  @include sm_up {
+    width: 30%;
+  }
+  @include sm {
+    &:nth-child(n+2) {
+      margin-top: 50px;
+    }
+  }
+}
+
+p {
+  margin-top: 0px;
+}
+
+

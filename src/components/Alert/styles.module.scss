@@ -1,0 +1,21 @@
+@use '../../scss/mixins.scss' as *;
+
+.alert {
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: $white;
+  border: 2px solid;
+  text-align: center;
+  font-size: 18px;
+}
+
+.success {
+  border-color: $purple;
+  color: $purple;
+}
+
+.error {
+  border-color: $red;
+  color: $red;
+}
