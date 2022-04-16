@@ -1,16 +1,12 @@
 import * as styles from './styles.module.scss'
-import Card from '../Card'
+import { Children } from 'react'
 
-const Cards = ({ cards }) => {
+const Cards = ({ children }) => {
   return (
     <div className={styles.cards}>
-      {cards.map(card =>
-        <div key={card.title} className={styles.cardBox}>
-          <Card
-            icon={card.icon}
-            title={card.title}
-            desc={card.desc}
-          />
+      {Children.map(children, child =>
+        <div className={styles.cardBox}>
+          {child}
         </div>
       )}
     </div>
