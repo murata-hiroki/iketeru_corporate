@@ -1,4 +1,4 @@
-import { smoothScrollTo } from '../../utilities/scroll'
+import { smoothScrollTo } from '../utilities/scroll'
 
 const AnchorLink = ({ children, target }) => {
   const handleClick = e => {
