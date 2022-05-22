@@ -1,8 +1,8 @@
 import { css } from '@emotion/react'
-import { colors, mq } from '../../utilities/styleUtilities'
-import DoubleCircle from '../../inline-svg/double-circle.svg'
-import Circle from '../../inline-svg/circle.svg'
-import Triangle from '../../inline-svg/triangle.svg'
+import { colors, mq } from '../utilities/styleUtilities'
+import DoubleCircle from '../inline-svg/double-circle.svg'
+import Circle from '../inline-svg/circle.svg'
+import Triangle from '../inline-svg/triangle.svg'
 
 const CompareTable = () => {
   return (
