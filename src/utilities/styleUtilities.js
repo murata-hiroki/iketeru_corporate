@@ -1,6 +1,6 @@
 // CSSで使用する定数や関数など
 
-import { css } from "@emotion/react"
+import { css } from '@emotion/react'
 
 // 色
 export const colors = {
