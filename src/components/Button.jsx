@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { colors } from '../utilities/styleUtilities'
+import { colors, mq } from '../utilities/styleUtilities'
 
 const Button = ({
   children,
@@ -39,18 +39,15 @@ const styles = {
     color: ${colors.white};
     text-decoration: none;
     cursor: pointer;
-
-    @include sm {
+    ${mq.sm} {
       width: 100%;
       height: 60px;
       font-size: 18px;
     }
-
     &:disabled {
       opacity: 0.4;
       cursor: default;
     }
-
     &:hover {
       opacity: 0.8;
     }
