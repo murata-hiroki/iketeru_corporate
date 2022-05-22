@@ -8,7 +8,9 @@ const path = require('path')
 module.exports = {
   /* Your site config here */
   jsxRuntime: 'automatic',
+  jsxImportSource: "@emotion/react",
   plugins: [
+    'gatsby-plugin-emotion',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
