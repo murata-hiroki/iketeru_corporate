@@ -1,11 +1,12 @@
-import * as styles from './styles.module.scss'
+import { css } from '@emotion/react'
 import { Children } from 'react'
+import { mq } from '../../utilities/styleUtilities'
 
 const Cards = ({ children }) => {
   return (
-    <div className={styles.cards}>
+    <div css={styles.cards}>
       {Children.map(children, child =>
-        <div className={styles.cardBox}>
+        <div css={styles.cardBox}>
           {child}
         </div>
       )}
@@ -14,3 +15,23 @@ const Cards = ({ children }) => {
 }
 
 export default Cards
+
+const styles = {
+  cards: css`
+    ${mq.smUp} {
+      display: flex;
+      justify-content: space-between;
+    }
+  `,
+
+  cardBox: css`
+    ${mq.smUp} {
+      width: 30%;
+    }
+    ${mq.sm} {
+      &:nth-child(n+2) {
+        margin-top: 50px;
+      }
+    }
+  `
+}
