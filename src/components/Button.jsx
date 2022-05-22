@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { colors } from '../../utilities/styleUtilities'
+import { colors } from '../utilities/styleUtilities'
 
 const Button = ({
   children,

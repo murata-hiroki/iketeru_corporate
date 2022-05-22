@@ -1,6 +1,6 @@
-import CompareTable from '../CompareTable'
-import Heading3 from '../Heading3'
-import SubSection from '../SubSection'
+import CompareTable from './CompareTable'
+import Heading3 from './Heading3'
+import SubSection from './SubSection'
 
 const Compare = () => {
   return (
