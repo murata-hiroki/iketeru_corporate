@@ -1,6 +1,7 @@
-import * as styles from './styles.module.scss'
+import { css } from '@emotion/react'
 import Label from '../Label'
 import Textbox from '../Textbox'
+import { colors } from '../../utilities/styleUtilities'
 
 const InputField = ({
   labelText,
@@ -26,9 +27,16 @@ const InputField = ({
         multiLine={multiLine}
         registerReturn={registerReturn}
       />
-      {error && <p className={styles.error}>{error.message}</p>}
+      {error && <p css={styles.error}>{error.message}</p>}
     </>
   )
 }
 
 export default InputField
+
+const styles = {
+  error: css`
+    margin-top: 10px;
+    color: ${colors.red};
+  `
+}
