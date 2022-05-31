@@ -1,7 +1,6 @@
 import Container from '../Container'
 import Heading2 from '../Heading2'
 import Section from '../Section'
-import Explain from '../Explain'
 import Sentence from '../Sentence'
 import ToFootnote from '../ToFootnote'
 import ConsOfWP from '../ConsOfWP'
@@ -23,15 +22,13 @@ const WPSection = () => {
           </p>
         </Sentence>
         <ConsOfWP />
-        <Explain>
-          <Sentence css={{ textAlign: 'center' }}>
-            <p>速度面やセキュリティ面で不安のあるWordPress、あなたは使い続けますか？</p>
-            <p>
-              それでもWordPressを使い続けたいという方は<br />
-              <Large><Marker>ここから先は読む必要はありません</Marker></Large>
-            </p>
-          </Sentence>
-        </Explain>
+        <Sentence css={{ marginTop: '64px', textAlign: 'center' }}>
+          <p>速度面やセキュリティ面で不安のあるWordPress、あなたは使い続けますか？</p>
+          <p>
+            それでもWordPressを使い続けたいという方は<br />
+            <Large><Marker>ここから先は読む必要はありません</Marker></Large>
+          </p>
+        </Sentence>
       </Container>
     </Section>
   )
