@@ -12,7 +12,7 @@ const Chief = () => {
         <div css={styles.media}>
           <div css={styles.image}>
             <StaticImage
-              src='../../images/yuto-ono.jpg'
+              src='../images/yuto-ono.jpg'
               alt='小野 優人'
               width={300}
               height={300}
