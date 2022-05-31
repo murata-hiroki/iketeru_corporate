@@ -24,7 +24,7 @@ const WPSection = () => {
         </Sentence>
         <ConsOfWP />
         <Explain>
-          <Sentence center>
+          <Sentence css={{ textAlign: 'center' }}>
             <p>速度面やセキュリティ面で不安のあるWordPress、あなたは使い続けますか？</p>
             <p>
               それでもWordPressを使い続けたいという方は<br />
