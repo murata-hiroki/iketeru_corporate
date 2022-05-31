@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form'
-import * as styles from './styles.module.scss'
+import { css } from '@emotion/react'
 import { useEstimateForm } from './hooks'
 import Button from '../Button'
 import InputField from '../InputField'
@@ -20,8 +20,8 @@ const EstimateForm = () => {
   } = useForm({ mode: 'onChange' })
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-      <div className={styles.inputBox}>
+    <form css={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      <div>
         <InputField
           labelText='氏名'
           required
@@ -33,7 +33,7 @@ const EstimateForm = () => {
           error={errors.name}
         />
       </div>
-      <div className={styles.inputBox}>
+      <div css={{ marginTop: `${FIELD_INTERVAL}px` }}>
         <InputField
           labelText='会社名・屋号'
           id='estimate_company'
@@ -41,7 +41,7 @@ const EstimateForm = () => {
           registerReturn={register('company')}
         />
       </div>
-      <div className={styles.inputBox}>
+      <div css={{ marginTop: `${FIELD_INTERVAL}px` }}>
         <InputField
           labelText='メールアドレス'
           required
@@ -57,7 +57,7 @@ const EstimateForm = () => {
           error={errors.email}
         />
       </div>
-      <div className={styles.inputBox}>
+      <div css={{ marginTop: `${FIELD_INTERVAL}px` }}>
         <InputField
           labelText='サイトURL'
           comment='（移行前のウェブサイトのURL）'
@@ -66,7 +66,7 @@ const EstimateForm = () => {
           registerReturn={register('website')}
         />
       </div>
-      <div className={styles.inputBox}>
+      <div css={{ marginTop: `${FIELD_INTERVAL}px` }}>
         <InputField
           labelText='備考・ご要望等'
           id='estimate_comment'
@@ -75,7 +75,7 @@ const EstimateForm = () => {
           registerReturn={register('comment')}
         />
       </div>
-      <div className={styles.btnBox}>
+      <div css={styles.btnBox}>
         <Button type='submit' disabled={disabled}>送信する</Button>
       </div>
       {status && <Alert status={status}>{message}</Alert>}
@@ -84,3 +84,20 @@ const EstimateForm = () => {
 }
 
 export default EstimateForm
+
+// フィールド同士の間隔（px）
+const FIELD_INTERVAL = 40
+
+const styles = {
+  form: css`
+    max-width: 800px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  `,
+
+  btnBox: css`
+    margin-top: 30px;
+    text-align: center;
+  `
+}
