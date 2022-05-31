@@ -1,8 +1,8 @@
-import Container from '../Container'
-import Cta from '../Cta'
-import EstimateForm from '../EstimateForm'
-import Heading2 from '../Heading2'
-import Section from '../Section'
+import Container from './Container'
+import Cta from './Cta'
+import EstimateForm from './EstimateForm'
+import Heading2 from './Heading2'
+import Section from './Section'
 
 const EstimateSection = () => {
   return (

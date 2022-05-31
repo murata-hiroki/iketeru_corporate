@@ -1,8 +1,8 @@
 import { css } from '@emotion/react'
-import Container from '../Container'
-import Footnote from '../Footnote'
-import logo from '../../images/logo.svg'
-import { colors, mq } from '../../utilities/styleUtilities'
+import Container from './Container'
+import Footnote from './Footnote'
+import logo from '../images/logo.svg'
+import { colors, mq } from '../utilities/styleUtilities'
 
 const Footer = () => {
   return (

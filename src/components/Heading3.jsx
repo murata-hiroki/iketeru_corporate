@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { colors, mq } from '../../utilities/styleUtilities'
+import { colors, mq } from '../utilities/styleUtilities'
 
 const Heading3 = ({ children }) => {
   return <h3 css={styles.h3}>{children}</h3>

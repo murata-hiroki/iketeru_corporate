@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { colors, textHoverEffect } from '../../utilities/styleUtilities'
+import { colors, textHoverEffect } from '../utilities/styleUtilities'
 
 const wpUrl = 'https://wordpressfoundation.org/'
 const gatsbyUrl = 'https://www.gatsbyjs.com/'

@@ -1,14 +1,14 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import { css } from '@emotion/react'
-import ScrollButton from '../ScrollButton'
-import { mq } from '../../utilities/styleUtilities'
+import ScrollButton from './ScrollButton'
+import { mq } from '../utilities/styleUtilities'
 
 const Cta = ({ hideBtn = false }) => {
   return (
     <div>
       <div css={styles.pcBanner}>
         <StaticImage
-          src='../../images/banner.png'
+          src='../images/banner.png'
           alt='創業キャンペーン実施中！ 通常価格¥100,000〜 → 先着3件限定 ¥30,000〜！'
           width={1000}
           height={437}
@@ -16,7 +16,7 @@ const Cta = ({ hideBtn = false }) => {
       </div>
       <div css={styles.spBanner}>
         <StaticImage
-          src='../../images/banner-sp.png'
+          src='../images/banner-sp.png'
           alt='創業キャンペーン実施中！ 通常価格¥100,000〜 → 先着3件限定 ¥30,000〜！'
         />
       </div>
