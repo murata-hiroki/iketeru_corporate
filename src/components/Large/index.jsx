@@ -1,7 +1,5 @@
-import * as styles from './styles.module.scss'
-
 const Large = ({ children }) => {
-  return <span className={styles.lg}>{children}</span>
+  return <span css={{ fontSize: '1.25em' }}>{children}</span>
 }
 
 export default Large
