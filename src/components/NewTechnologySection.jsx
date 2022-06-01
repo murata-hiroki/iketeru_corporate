@@ -8,10 +8,11 @@ import Seo from './Seo'
 import Compare from './Compare'
 import Migration from './Migration'
 import Cta from './Cta'
+import { colors } from '../utilities/styleUtilities'
 
 const NewTechnologySection = () => {
   return (
-    <Section color='purple'>
+    <Section css={{ background: colors.purple3 }}>
       <Container>
         <Heading2>
           新時代の技術、Gatsby<ToFootnote />。

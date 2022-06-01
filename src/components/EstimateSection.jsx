@@ -1,3 +1,4 @@
+import { colors } from '../utilities/styleUtilities'
 import Container from './Container'
 import Cta from './Cta'
 import EstimateForm from './EstimateForm'
@@ -6,7 +7,7 @@ import Section from './Section'
 
 const EstimateSection = () => {
   return (
-    <Section color='purple' id='estimate'>
+    <Section id='estimate' css={{ background: colors.purple3 }}>
       <Container>
         <Heading2>無料お見積りはこちらから</Heading2>
         <Cta hideBtn />
