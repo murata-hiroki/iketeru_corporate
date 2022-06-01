@@ -13,7 +13,7 @@ const Migration = () => {
       <div css={styles.figure}>
         <div css={styles.wp}>
           <StaticImage
-            src='../../images/wordpress.png'
+            src='../images/wordpress.png'
             alt='WordPress'
             width={400}
             height={83}
