@@ -1,4 +1,5 @@
-import * as styles from './styles.module.scss'
+import { css } from '@emotion/react'
+import { colors, mq } from '../../utilities/styleUtilities'
 
 const Textbox = ({
   id,
@@ -13,7 +14,7 @@ const Textbox = ({
         type='text'
         id={id}
         name={name}
-        className={styles.input}
+        css={inputStyle}
         placeholder={placeholder}
         {...registerReturn}
       />
@@ -23,7 +24,7 @@ const Textbox = ({
       <textarea
         id={id}
         name={name}
-        className={styles.textarea}
+        css={textareaStyle}
         placeholder={placeholder}
         {...registerReturn}
       />
@@ -32,3 +33,22 @@ const Textbox = ({
 }
 
 export default Textbox
+
+const inputStyle = css`
+  width: 100%;
+  padding: 15px;
+  border-radius: 0;
+  border: 1px solid ${colors.black};
+  font-size: 22px;
+  line-height: 1.6;
+  font-family: inherit;
+  ${mq.sm} {
+    padding: 10px;
+    font-size: 18px;
+  }
+`
+
+const textareaStyle = css`
+  ${inputStyle};
+  height: 300px;
+`
