@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { mq } from '../../utilities/styleUtilities'
+import { mq } from '../utilities/styleUtilities'
 
 const Section = ({ children, className, id = null }) => {
   return (
