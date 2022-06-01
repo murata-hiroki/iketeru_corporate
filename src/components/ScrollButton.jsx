@@ -1,5 +1,5 @@
-import { smoothScrollTo } from '../../utilities/scroll'
-import Button from '../Button'
+import { smoothScrollTo } from '../utilities/scroll'
+import Button from './Button'
 
 const ScrollButton = ({ children, target }) => {
   const handleClick = e => {

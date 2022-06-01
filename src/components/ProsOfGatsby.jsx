@@ -1,12 +1,12 @@
-import SubSection from '../SubSection'
-import Heading3 from '../Heading3'
-import Cards from '../Cards'
-import Sentence from '../Sentence'
-import Marker from '../Marker'
-import Card from '../Card'
-import Icon1 from '../../inline-svg/pros-icon1.svg'
-import Icon2 from '../../inline-svg/pros-icon2.svg'
-import Icon3 from '../../inline-svg/pros-icon3.svg'
+import SubSection from './SubSection'
+import Heading3 from './Heading3'
+import Cards from './Cards'
+import Sentence from './Sentence'
+import Marker from './Marker'
+import Card from './Card'
+import Icon1 from '../inline-svg/pros-icon1.svg'
+import Icon2 from '../inline-svg/pros-icon2.svg'
+import Icon3 from '../inline-svg/pros-icon3.svg'
 
 const ProsOfGatsby = () => {
   return (

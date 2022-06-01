@@ -1,10 +1,10 @@
 import { css } from '@emotion/react'
 import { StaticImage } from 'gatsby-plugin-image'
-import Heading3 from '../Heading3'
-import SubSection from '../SubSection'
-import ArrowRight from '../../inline-svg/arrow-right.svg'
-import gatsbyLogo from '../../images/gatsby.svg'
-import { colors, mq } from '../../utilities/styleUtilities'
+import Heading3 from './Heading3'
+import SubSection from './SubSection'
+import ArrowRight from '../inline-svg/arrow-right.svg'
+import gatsbyLogo from '../images/gatsby.svg'
+import { colors, mq } from '../utilities/styleUtilities'
 
 const Migration = () => {
   return (

@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
-import Label from '../Label'
-import Textbox from '../Textbox'
-import { colors } from '../../utilities/styleUtilities'
+import Label from './Label'
+import Textbox from './Textbox'
+import { colors } from '../utilities/styleUtilities'
 
 const InputField = ({
   labelText,
