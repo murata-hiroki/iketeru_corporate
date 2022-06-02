@@ -1,8 +1,8 @@
-import Heading3 from './Heading3'
-import SubSection from './SubSection'
-import Sentence from './Sentence'
-import Marker from './Marker'
-import Attention from './Attention'
+import Heading3 from './common/Heading3'
+import SubSection from './common/SubSection'
+import Sentence from './common/Sentence'
+import Marker from './common/Marker'
+import Attention from './common/Attention'
 
 const Seo = () => {
   return (

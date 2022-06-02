@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { colors } from '../styles/utils'
+import { colors } from '../../styles/utils'
 
 const Marker = ({ children }) => {
   return <span css={styles.marker}>{children}</span>

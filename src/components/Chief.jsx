@@ -1,8 +1,8 @@
 import { css } from '@emotion/react'
 import { colors, mq } from '../styles/utils'
 import { StaticImage } from 'gatsby-plugin-image'
-import SubSection from './SubSection'
-import Heading3 from './Heading3'
+import SubSection from './common/SubSection'
+import Heading3 from './common/Heading3'
 
 const Chief = () => {
   return (

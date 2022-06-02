@@ -1,9 +1,9 @@
 import { useForm } from 'react-hook-form'
 import { css } from '@emotion/react'
 import { useEstimateForm } from './EstimateForm.hooks'
-import Button from '../Button'
-import InputField from '../InputField'
-import Alert from '../Alert'
+import Button from '../common/Button'
+import InputField from '../common/InputField'
+import Alert from '../common/Alert'
 
 const EstimateForm = () => {
   const {

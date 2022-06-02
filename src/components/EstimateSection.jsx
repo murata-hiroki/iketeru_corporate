@@ -2,8 +2,8 @@ import { colors } from '../styles/utils'
 import Container from './Container'
 import Cta from './Cta'
 import EstimateForm from './EstimateForm'
-import Heading2 from './Heading2'
-import Section from './Section'
+import Heading2 from './common/Heading2'
+import Section from './common/Section'
 
 const EstimateSection = () => {
   return (

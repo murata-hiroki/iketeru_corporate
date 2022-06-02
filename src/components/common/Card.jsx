@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { mq } from '../styles/utils'
+import { mq } from '../../styles/utils'
 
 const Card = ({ icon, title, children }) => {
   return (

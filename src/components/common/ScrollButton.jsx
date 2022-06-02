@@ -1,4 +1,4 @@
-import { smoothScrollTo } from '../utils/scroll'
+import { smoothScrollTo } from '../../utils/scroll'
 import Button from './Button'
 
 const ScrollButton = ({ children, target }) => {
