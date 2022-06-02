@@ -5,7 +5,7 @@ import Section from '../Section'
 import { faqList } from './faqList'
 import IconQ from '../../inline-svg/icon-q.svg'
 import IconA from '../../inline-svg/icon-a.svg'
-import { colors, mq } from '../../utilities/styleUtilities'
+import { colors, mq } from '../../styles/utils'
 
 const Faq = () => {
   return (

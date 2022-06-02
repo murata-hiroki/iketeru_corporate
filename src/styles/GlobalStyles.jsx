@@ -1,5 +1,5 @@
 import { Global, css } from '@emotion/react'
-import { colors } from '../utilities/styleUtilities'
+import { colors } from './utils'
 
 const GlobalStyles = () => {
   return <Global styles={styles} />

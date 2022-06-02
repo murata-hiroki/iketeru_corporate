@@ -1,4 +1,4 @@
-import { colors } from '../utilities/styleUtilities'
+import { colors } from '../styles/utils'
 import Container from './Container'
 import Cta from './Cta'
 import EstimateForm from './EstimateForm'

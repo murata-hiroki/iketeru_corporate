@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { mq, noFade } from '../../utilities/styleUtilities'
+import { mq, noFade } from '../../styles/utils'
 
 const HeroBG = () => {
   return (

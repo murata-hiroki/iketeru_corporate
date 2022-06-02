@@ -1,7 +1,7 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import { css } from '@emotion/react'
 import ScrollButton from './ScrollButton'
-import { mq } from '../utilities/styleUtilities'
+import { mq } from '../styles/utils'
 
 const Cta = ({ hideBtn = false }) => {
   return (
