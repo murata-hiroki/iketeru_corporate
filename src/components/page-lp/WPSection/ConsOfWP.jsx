@@ -1,10 +1,10 @@
-import Card from './common/Card'
-import Cards from './common/Cards'
-import Heading3 from './common/Heading3'
-import SubSection from './common/SubSection'
-import Icon1 from '../inline-svg/cons-icon1.svg'
-import Icon2 from '../inline-svg/cons-icon2.svg'
-import Icon3 from '../inline-svg/cons-icon3.svg'
+import Card from '../../common/Card'
+import Cards from '../../common/Cards'
+import Heading3 from '../../common/Heading3'
+import SubSection from '../../common/SubSection'
+import Icon1 from '../../../inline-svg/cons-icon1.svg'
+import Icon2 from '../../../inline-svg/cons-icon2.svg'
+import Icon3 from '../../../inline-svg/cons-icon3.svg'
 
 const ConsOfWP = () => {
   return (

@@ -1,14 +1,14 @@
-import Section from './common/Section'
-import Container from './Container'
-import Heading2 from './common/Heading2'
-import ToFootnote from './ToFootnote'
-import Sentence from './common/Sentence'
+import Section from '../../common/Section'
+import Container from '../../common/Container'
+import Heading2 from '../../common/Heading2'
+import ToFootnote from '../../ToFootnote'
+import Sentence from '../../common/Sentence'
 import ProsOfGatsby from './ProsOfGatsby'
 import Seo from './Seo'
 import Compare from './Compare'
-import Migration from './Migration'
-import Cta from './Cta'
-import { colors } from '../styles/utils'
+import Migration from '../Migration'
+import Cta from '../Cta'
+import { colors } from '../../../styles/utils'
 
 const NewTechnologySection = () => {
   return (

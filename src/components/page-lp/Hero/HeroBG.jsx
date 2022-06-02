@@ -1,13 +1,13 @@
 import { css } from '@emotion/react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { mq, noFade } from '../../styles/utils'
+import { mq, noFade } from '../../../styles/utils'
 
 const HeroBG = () => {
   return (
     <>
       <div css={styles.bg}>
         <StaticImage
-          src='../../images/hero-bg.png'
+          src='../../../images/hero-bg.png'
           alt=''
           loading='eager'
           placeholder='none'
@@ -17,7 +17,7 @@ const HeroBG = () => {
       </div>
       <div css={styles.left}>
         <StaticImage
-          src='../../images/hero-left.png'
+          src='../../../images/hero-left.png'
           alt=''
           loading='eager'
           placeholder='none'
@@ -28,7 +28,7 @@ const HeroBG = () => {
       </div>
       <div css={styles.right}>
         <StaticImage
-          src='../../images/hero-right.png'
+          src='../../../images/hero-right.png'
           alt=''
           loading='eager'
           placeholder='none'

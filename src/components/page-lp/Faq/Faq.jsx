@@ -1,11 +1,11 @@
 import { css } from '@emotion/react'
-import Container from '../Container'
-import Heading2 from '../common/Heading2'
-import Section from '../common/Section'
+import Container from '../../common/Container'
+import Heading2 from '../../common/Heading2'
+import Section from '../../common/Section'
 import { faqList } from './faqList'
-import IconQ from '../../inline-svg/icon-q.svg'
-import IconA from '../../inline-svg/icon-a.svg'
-import { colors, mq } from '../../styles/utils'
+import IconQ from '../../../inline-svg/icon-q.svg'
+import IconA from '../../../inline-svg/icon-a.svg'
+import { colors, mq } from '../../../styles/utils'
 
 const Faq = () => {
   return (

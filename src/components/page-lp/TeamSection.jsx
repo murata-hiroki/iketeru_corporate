@@ -1,10 +1,10 @@
 import Chief from './Chief'
-import Container from './Container'
+import Container from '../common/Container'
 import Cta from './Cta'
-import Heading2 from './common/Heading2'
+import Heading2 from '../common/Heading2'
 import Migration from './Migration'
-import Section from './common/Section'
-import Sentence from './common/Sentence'
+import Section from '../common/Section'
+import Sentence from '../common/Sentence'
 
 const TeamSection = () => {
   return (

@@ -1,8 +1,8 @@
 import { css } from '@emotion/react'
-import { colors, mq } from '../styles/utils'
+import { colors, mq } from '../../styles/utils'
 import { StaticImage } from 'gatsby-plugin-image'
-import SubSection from './common/SubSection'
-import Heading3 from './common/Heading3'
+import SubSection from '../common/SubSection'
+import Heading3 from '../common/Heading3'
 
 const Chief = () => {
   return (
@@ -12,7 +12,7 @@ const Chief = () => {
         <div css={styles.media}>
           <div css={styles.image}>
             <StaticImage
-              src='../images/yuto-ono.jpg'
+              src='../../images/yuto-ono.jpg'
               alt='小野 優人'
               width={300}
               height={300}

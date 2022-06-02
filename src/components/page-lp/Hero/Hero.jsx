@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
-import { colors, mq, SP_PADDING } from '../../styles/utils'
+import { colors, mq, SP_PADDING } from '../../../styles/utils'
 import HeroBG from './HeroBG'
-import ScrollButton from '../common/ScrollButton'
+import ScrollButton from '../../common/ScrollButton'
 
 const Hero = () => {
   return (

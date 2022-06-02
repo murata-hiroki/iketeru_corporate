@@ -1,10 +1,10 @@
 import { css } from '@emotion/react'
 import { StaticImage } from 'gatsby-plugin-image'
-import Heading3 from './common/Heading3'
-import SubSection from './common/SubSection'
-import ArrowRight from '../inline-svg/arrow-right.svg'
-import gatsbyLogo from '../images/gatsby.svg'
-import { colors, mq } from '../styles/utils'
+import Heading3 from '../common/Heading3'
+import SubSection from '../common/SubSection'
+import ArrowRight from '../../inline-svg/arrow-right.svg'
+import gatsbyLogo from '../../images/gatsby.svg'
+import { colors, mq } from '../../styles/utils'
 
 const Migration = () => {
   return (
@@ -13,7 +13,7 @@ const Migration = () => {
       <div css={styles.figure}>
         <div css={styles.wp}>
           <StaticImage
-            src='../images/wordpress.png'
+            src='../../images/wordpress.png'
             alt='WordPress'
             width={400}
             height={83}

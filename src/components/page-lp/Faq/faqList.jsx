@@ -1,4 +1,4 @@
-import AnchorLink from '../common/AnchorLink'
+import AnchorLink from '../../common/AnchorLink'
 
 export const faqList = [
   {

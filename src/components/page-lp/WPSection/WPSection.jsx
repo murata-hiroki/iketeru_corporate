@@ -1,11 +1,11 @@
-import Container from './Container'
-import Heading2 from './common/Heading2'
-import Section from './common/Section'
-import Sentence from './common/Sentence'
-import ToFootnote from './ToFootnote'
+import Container from '../../common/Container'
+import Heading2 from '../../common/Heading2'
+import Section from '../../common/Section'
+import Sentence from '../../common/Sentence'
+import ToFootnote from '../../ToFootnote'
 import ConsOfWP from './ConsOfWP'
-import Large from './common/Large'
-import Marker from './common/Marker'
+import Large from '../../common/Large'
+import Marker from '../../common/Marker'
 
 const WPSection = () => {
   return (
