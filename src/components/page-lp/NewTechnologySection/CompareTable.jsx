@@ -114,13 +114,13 @@ const styles = {
   `,
 
   bodyRow: css`
-    &:nth-child(odd) {
+    &:nth-of-type() {
       background-color: ${colors.white};
     }
-    &:nth-child(even) {
+    &:nth-of-type() {
       background-color: ${colors.purple3};
     }
-    &:last-child {
+    &:last-of-type {
       border-bottom: 2px solid ${colors.gray};
     }
   `,
@@ -164,7 +164,7 @@ const styles = {
       padding: 15px 10px;
       font-size: 14px;
     }
-    &:last-child {
+    &:last-of-type {
       border-right: 2px solid ${colors.gray};
     }
   `

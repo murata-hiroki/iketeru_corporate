@@ -29,7 +29,7 @@ const styles = {
       width: 30%;
     }
     ${mq.sm} {
-      &:nth-child(n+2) {
+      &:nth-of-type(n+2) {
         margin-top: 50px;
       }
     }
