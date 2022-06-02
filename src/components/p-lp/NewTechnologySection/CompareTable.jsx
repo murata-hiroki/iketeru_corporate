@@ -116,10 +116,10 @@ const styles = {
   `,
 
   bodyRow: css`
-    &:nth-of-type() {
+    &:nth-of-type(odd) {
       background-color: ${colors.white};
     }
-    &:nth-of-type() {
+    &:nth-of-type(even) {
       background-color: ${colors.purple3};
     }
     &:last-of-type {
