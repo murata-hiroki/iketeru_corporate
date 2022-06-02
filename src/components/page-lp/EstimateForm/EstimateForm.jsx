@@ -33,7 +33,7 @@ const EstimateForm = () => {
           error={errors.name}
         />
       </div>
-      <div css={{ marginTop: `${FIELD_INTERVAL}px` }}>
+      <div css={styles.mt}>
         <InputField
           labelText='会社名・屋号'
           id='estimate_company'
@@ -41,7 +41,7 @@ const EstimateForm = () => {
           registerReturn={register('company')}
         />
       </div>
-      <div css={{ marginTop: `${FIELD_INTERVAL}px` }}>
+      <div css={styles.mt}>
         <InputField
           labelText='メールアドレス'
           required
@@ -57,7 +57,7 @@ const EstimateForm = () => {
           error={errors.email}
         />
       </div>
-      <div css={{ marginTop: `${FIELD_INTERVAL}px` }}>
+      <div css={styles.mt}>
         <InputField
           labelText='サイトURL'
           comment='（移行前のウェブサイトのURL）'
@@ -66,7 +66,7 @@ const EstimateForm = () => {
           registerReturn={register('website')}
         />
       </div>
-      <div css={{ marginTop: `${FIELD_INTERVAL}px` }}>
+      <div css={styles.mt}>
         <InputField
           labelText='備考・ご要望等'
           id='estimate_comment'
@@ -85,9 +85,6 @@ const EstimateForm = () => {
 
 export default EstimateForm
 
-// フィールド同士の間隔（px）
-const FIELD_INTERVAL = 40
-
 const styles = {
   form: css`
     max-width: 800px;
@@ -99,5 +96,9 @@ const styles = {
   btnBox: css`
     margin-top: 30px;
     text-align: center;
+  `,
+
+  mt: css`
+    margin-top: 40px;
   `
 }
