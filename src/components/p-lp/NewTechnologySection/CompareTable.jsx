@@ -8,9 +8,9 @@ const CompareTable = () => {
   return (
     <div css={styles.wrapper}>
       <table css={styles.table}>
-        <colgroup>
+        <colgroup css={styles.colgroup}>
           <col />
-          <col css={styles.gatsbyCol} />
+          <col />
           <col />
         </colgroup>
         <thead>
@@ -109,8 +109,10 @@ const styles = {
     text-align: center;
   `,
 
-  gatsbyCol: css`
-    border: 4px solid ${colors.purple};
+  colgroup: css`
+    col:nth-of-type(2) {
+      border: 4px solid ${colors.purple};
+    }
   `,
 
   bodyRow: css`
