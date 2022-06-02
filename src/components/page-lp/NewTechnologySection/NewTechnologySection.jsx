@@ -1,7 +1,7 @@
 import Section from '../../common/Section'
 import Container from '../../common/Container'
 import Heading2 from '../../common/Heading2'
-import ToFootnote from '../../ToFootnote'
+import AnchorLink from '../../common/AnchorLink'
 import Sentence from '../../common/Sentence'
 import ProsOfGatsby from './ProsOfGatsby'
 import Seo from './Seo'
@@ -15,7 +15,7 @@ const NewTechnologySection = () => {
     <Section css={{ background: colors.purple3 }}>
       <Container>
         <Heading2>
-          新時代の技術、Gatsby<ToFootnote />。
+          新時代の技術、Gatsby<AnchorLink target='footer'>*</AnchorLink>。
         </Heading2>
         <Sentence>
           <p>

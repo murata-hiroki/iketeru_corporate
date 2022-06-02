@@ -2,7 +2,7 @@ import Container from '../../common/Container'
 import Heading2 from '../../common/Heading2'
 import Section from '../../common/Section'
 import Sentence from '../../common/Sentence'
-import ToFootnote from '../../ToFootnote'
+import AnchorLink from '../../common/AnchorLink'
 import ConsOfWP from './ConsOfWP'
 import Large from '../../common/Large'
 import Marker from '../../common/Marker'
@@ -12,7 +12,7 @@ const WPSection = () => {
     <Section>
       <Container>
         <Heading2>
-          WordPress<ToFootnote />の時代は終わった。
+          WordPress<AnchorLink target='footer'>*</AnchorLink>の時代は終わった。
         </Heading2>
         <Sentence>
           <p>
