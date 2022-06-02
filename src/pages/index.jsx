@@ -1,4 +1,4 @@
-import Template from '../components/page-lp'
+import Template from '../components/p-lp'
 
 const Page = () => {
   return <Template />
