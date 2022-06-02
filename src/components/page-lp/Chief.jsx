@@ -24,11 +24,17 @@ const Chief = () => {
           </p>
         </div>
         <div css={styles.content}>
-          <ul css={styles.history}>
-            <li>Web制作会社で約3年間フロントエンドエンジニアを務める</li>
-            <li>フリーランスとして独立、約1年間、Web開発業務を個人で請け負う</li>
-            <li>IT企業にて、2年間CTO（最高技術責任者）を務める</li>
-            <li className='current'>
+          <ul>
+            <li css={styles.historyItem}>
+              Web制作会社で約3年間フロントエンドエンジニアを務める
+            </li>
+            <li css={styles.historyItem}>
+              フリーランスとして独立、約1年間、Web開発業務を個人で請け負う
+            </li>
+            <li css={styles.historyItem}>
+              IT企業にて、2年間CTO（最高技術責任者）を務める
+            </li>
+            <li css={styles.historyCurrent}>
               独立、イケテルシステムを開業<br />
               質の高いWebサイトを構築する事業を展開
             </li>
@@ -40,6 +46,31 @@ const Chief = () => {
 }
 
 export default Chief
+
+const historyItemBase = css`
+  position: relative;
+  list-style-type: none;
+  padding: 0 0 30px 50px;
+  font-size: 22px;
+  ${mq.sm} {
+    padding: 0 0 20px 35px;
+    font-size: 16px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: ${colors.purple2};
+    ${mq.sm} {
+      top: 0;
+    }
+  }
+`
 
 const styles = {
   chief: css`
@@ -76,48 +107,23 @@ const styles = {
     }
   `,
 
-  history: css`
-    li {
-      position: relative;
-      list-style-type: none;
-      padding: 0 0 30px 50px;
-      font-size: 22px;
-      ${mq.sm} {
-        padding: 0 0 20px 35px;
-        font-size: 16px;
-      }
-      &::before {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: 5px;
-        left: 0;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        background-color: ${colors.purple2};
+  historyItem: css`
+    ${historyItemBase};
+    &::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 11px;
+      width: 2px;
+      bottom: -10px;
+      background-color: ${colors.gray};
+    }
+  `,
 
-        @include sm {
-          top: 0;
-        }
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        top: 20px;
-        left: 11px;
-        width: 2px;
-        bottom: -10px;
-        background-color: ${colors.gray};
-      }
-      &.current {
-        &::before {
-          background-color: ${colors.purple};
-        }
-        &::after {
-          content: none;
-        }
-      }
+  historyCurrent: css`
+    ${historyItemBase};
+    &::before {
+      background-color: ${colors.purple};
     }
   `
 }
