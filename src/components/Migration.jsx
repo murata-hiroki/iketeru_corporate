@@ -4,7 +4,7 @@ import Heading3 from './Heading3'
 import SubSection from './SubSection'
 import ArrowRight from '../inline-svg/arrow-right.svg'
 import gatsbyLogo from '../images/gatsby.svg'
-import { colors, mq } from '../utilities/styleUtilities'
+import { colors, mq } from '../styles/utils'
 
 const Migration = () => {
   return (

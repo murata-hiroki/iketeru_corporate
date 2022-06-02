@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { colors, mq, SP_PADDING } from '../../utilities/styleUtilities'
+import { colors, mq, SP_PADDING } from '../../styles/utils'
 import HeroBG from './HeroBG'
 import ScrollButton from '../ScrollButton'
 

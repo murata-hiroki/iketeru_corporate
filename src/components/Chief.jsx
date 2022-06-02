@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { colors, mq } from '../utilities/styleUtilities'
+import { colors, mq } from '../styles/utils'
 import { StaticImage } from 'gatsby-plugin-image'
 import SubSection from './SubSection'
 import Heading3 from './Heading3'

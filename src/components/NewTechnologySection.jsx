@@ -8,7 +8,7 @@ import Seo from './Seo'
 import Compare from './Compare'
 import Migration from './Migration'
 import Cta from './Cta'
-import { colors } from '../utilities/styleUtilities'
+import { colors } from '../styles/utils'
 
 const NewTechnologySection = () => {
   return (

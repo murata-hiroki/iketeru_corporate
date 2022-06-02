@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 import { Children } from 'react'
-import { mq } from '../utilities/styleUtilities'
+import { mq } from '../styles/utils'
 
 const Cards = ({ children }) => {
   return (

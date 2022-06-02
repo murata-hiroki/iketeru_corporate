@@ -1,5 +1,5 @@
 import { css } from '@emotion/react'
-import { mq, PC_PADDING, PC_WIDTH, SP_PADDING } from '../utilities/styleUtilities'
+import { mq, PC_PADDING, PC_WIDTH, SP_PADDING } from '../styles/utils'
 
 const Container = ({ children }) => {
   return <div css={styles.container}>{children}</div>

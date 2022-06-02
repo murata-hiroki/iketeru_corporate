@@ -13,7 +13,6 @@ module.exports = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
