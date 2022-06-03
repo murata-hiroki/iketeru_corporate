@@ -1,6 +1,5 @@
 import { css } from '@emotion/react'
 import ScrollButton from '../common/ScrollButton'
-import { mq } from '../../styles/utils'
 
 const Cta = ({ hideBtn = false }) => {
   if (hideBtn) {
