@@ -10,7 +10,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "prepare": "simple-git-hooks > /dev/null"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -28,13 +29,14 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
+    "lint-staged": "^13.0.0",
+    "simple-git-hooks": "^2.8.0",
     "standard": "^17.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "lint-staged": {
+    "*.{js,jsx}": "standard --fix"
   }
 }
