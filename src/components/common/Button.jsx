@@ -1,16 +1,16 @@
-import { css } from '@emotion/react'
-import { colors, mq } from '../../styles/utils'
+import { css } from "@emotion/react"
+import { colors, mq } from "../../styles/utils"
 
 const Button = ({
   children,
-  type = 'link',
+  type = "link",
   href = null,
   onClick = null,
-  disabled = false
+  disabled = false,
 }) => {
-  if (type === 'submit') {
+  if (type === "submit") {
     return (
-      <button type='submit' css={styles.btn} disabled={disabled}>
+      <button type="submit" css={styles.btn} disabled={disabled}>
         {children}
       </button>
     )
@@ -51,5 +51,5 @@ const styles = {
     &:hover {
       opacity: 0.8;
     }
-  `
+  `,
 }

@@ -1,12 +1,7 @@
-import { css } from '@emotion/react'
-import { colors, mq } from '../../styles/utils'
+import { css } from "@emotion/react"
+import { colors, mq } from "../../styles/utils"
 
-const Label = ({
-  htmlFor,
-  labelText,
-  required = false,
-  comment = null
-}) => {
+const Label = ({ htmlFor, labelText, required = false, comment = null }) => {
   return (
     <label htmlFor={htmlFor} css={styles.label}>
       {labelText}
@@ -49,5 +44,5 @@ const styles = {
     ${mq.sm} {
       font-size: 14px;
     }
-  `
+  `,
 }

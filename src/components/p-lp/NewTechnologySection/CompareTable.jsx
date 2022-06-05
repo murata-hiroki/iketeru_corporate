@@ -1,8 +1,8 @@
-import { css } from '@emotion/react'
-import { colors, mq } from '../../../styles/utils'
-import DoubleCircle from '../../../inline-svg/double-circle.svg'
-import Circle from '../../../inline-svg/circle.svg'
-import Triangle from '../../../inline-svg/triangle.svg'
+import { css } from "@emotion/react"
+import { colors, mq } from "../../../styles/utils"
+import DoubleCircle from "../../../inline-svg/double-circle.svg"
+import Circle from "../../../inline-svg/circle.svg"
+import Triangle from "../../../inline-svg/triangle.svg"
 
 const CompareTable = () => {
   return (
@@ -22,54 +22,62 @@ const CompareTable = () => {
         </thead>
         <tbody>
           <tr css={styles.bodyRow}>
-            <td css={styles.itemHead}>
-              表示スピード
-            </td>
+            <td css={styles.itemHead}>表示スピード</td>
             <td css={styles.desc}>
-              <div><DoubleCircle /></div>
+              <div>
+                <DoubleCircle />
+              </div>
               非常に速い
             </td>
             <td css={styles.desc}>
-              <div><Triangle /></div>
+              <div>
+                <Triangle />
+              </div>
               遅くなりやすい
             </td>
           </tr>
           <tr css={styles.bodyRow}>
-            <td css={styles.itemHead}>
-              セキュリティ
-            </td>
+            <td css={styles.itemHead}>セキュリティ</td>
             <td css={styles.desc}>
-              <div><Circle /></div>
+              <div>
+                <Circle />
+              </div>
               セキュリティリスクが低い
             </td>
             <td css={styles.desc}>
-              <div><Triangle /></div>
+              <div>
+                <Triangle />
+              </div>
               セキュリティリスクあり
             </td>
           </tr>
           <tr css={styles.bodyRow}>
-            <td css={styles.itemHead}>
-              管理コスト
-            </td>
+            <td css={styles.itemHead}>管理コスト</td>
             <td css={styles.desc}>
-              <div><Circle /></div>
+              <div>
+                <Circle />
+              </div>
               ソフトウェアのアップデートをチェックする頻度を減らせる
             </td>
             <td css={styles.desc}>
-              <div><Triangle /></div>
+              <div>
+                <Triangle />
+              </div>
               管理が煩雑で、ソフトウェアのアップデートを常にチェックし続ける必要あり
             </td>
           </tr>
           <tr css={styles.bodyRow}>
-            <td css={styles.itemHead}>
-              サーバーコスト
-            </td>
+            <td css={styles.itemHead}>サーバーコスト</td>
             <td css={styles.desc}>
-              <div><DoubleCircle /></div>
+              <div>
+                <DoubleCircle />
+              </div>
               大抵の場合、無料
             </td>
             <td css={styles.desc}>
-              <div><Triangle /></div>
+              <div>
+                <Triangle />
+              </div>
               月額1000円程度が相場
             </td>
           </tr>
@@ -169,5 +177,5 @@ const styles = {
     &:last-of-type {
       border-right: 2px solid ${colors.gray};
     }
-  `
+  `,
 }

@@ -1,13 +1,13 @@
-import smoothscroll from 'smoothscroll-polyfill'
+import smoothscroll from "smoothscroll-polyfill"
 
-typeof window !== 'undefined' && smoothscroll.polyfill()
+typeof window !== "undefined" && smoothscroll.polyfill()
 
-export const smoothScrollTo = id => {
+export const smoothScrollTo = (id) => {
   const el = document.getElementById(id)
   const rect = el.getBoundingClientRect()
   const top = rect.top + window.pageYOffset
   window.scrollTo({
     top,
-    behavior: 'smooth'
+    behavior: "smooth",
   })
 }

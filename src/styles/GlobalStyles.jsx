@@ -1,5 +1,5 @@
-import { Global, css } from '@emotion/react'
-import { colors } from './utils'
+import { Global, css } from "@emotion/react"
+import { colors } from "./utils"
 
 const GlobalStyles = () => {
   return <Global styles={styles} />
@@ -14,8 +14,8 @@ const styles = css`
 
   body {
     font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "Roboto",
-      "Hiragino Kaku Gothic ProN", "Hiragino Sans",
-      "YuGothic", "Yu Gothic", "Meiryo", sans-serif;
+      "Hiragino Kaku Gothic ProN", "Hiragino Sans", "YuGothic", "Yu Gothic",
+      "Meiryo", sans-serif;
     line-height: 1.6;
     box-sizing: border-box;
     color: ${colors.black};
@@ -28,7 +28,9 @@ const styles = css`
     font-weight: inherit;
   }
 
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     box-sizing: inherit;
   }
 

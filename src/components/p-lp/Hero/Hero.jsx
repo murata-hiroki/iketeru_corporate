@@ -1,7 +1,7 @@
-import { css } from '@emotion/react'
-import { colors, mq, SP_PADDING } from '../../../styles/utils'
-import HeroBG from './HeroBG'
-import ScrollButton from '../../common/ScrollButton'
+import { css } from "@emotion/react"
+import { colors, mq, SP_PADDING } from "../../../styles/utils"
+import HeroBG from "./HeroBG"
+import ScrollButton from "../../common/ScrollButton"
 
 const Hero = () => {
   return (
@@ -9,15 +9,19 @@ const Hero = () => {
       <HeroBG />
       <div css={styles.inner}>
         <h1 css={styles.title}>
-          まだWordPressを<br />ご利用の方、必見！！
+          まだWordPressを
+          <br />
+          ご利用の方、必見！！
         </h1>
         <p css={styles.catchcopy}>
-          あなたのサイト、<br />
-          もっと高速に、<br />
+          あなたのサイト、
+          <br />
+          もっと高速に、
+          <br />
           もっとセキュリティを強固に。
         </p>
         <div css={styles.btnBox}>
-          <ScrollButton target='estimate'>無料お見積もりはこちら</ScrollButton>
+          <ScrollButton target="estimate">無料お見積もりはこちら</ScrollButton>
         </div>
       </div>
     </div>
@@ -68,5 +72,5 @@ const styles = {
     padding: 0 ${SP_PADDING}px;
     margin-top: 25px;
     text-align: center;
-  `
+  `,
 }

@@ -1,5 +1,5 @@
-import { css } from '@emotion/react'
-import ScrollButton from '../common/ScrollButton'
+import { css } from "@emotion/react"
+import ScrollButton from "../common/ScrollButton"
 
 const Cta = ({ hideBtn = false }) => {
   if (hideBtn) {
@@ -8,7 +8,7 @@ const Cta = ({ hideBtn = false }) => {
 
   return (
     <div css={styles.btnBox}>
-      <ScrollButton target='estimate'>無料お見積もりはこちら</ScrollButton>
+      <ScrollButton target="estimate">無料お見積もりはこちら</ScrollButton>
     </div>
   )
 }
@@ -19,5 +19,5 @@ const styles = {
   btnBox: css`
     margin-top: 50px;
     text-align: center;
-  `
+  `,
 }

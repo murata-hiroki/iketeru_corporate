@@ -1,1 +1,1 @@
-export { default } from './NewTechnologySection'
+export { default } from "./NewTechnologySection"

@@ -1,5 +1,5 @@
-import { css } from '@emotion/react'
-import { mq } from '../../styles/utils'
+import { css } from "@emotion/react"
+import { mq } from "../../styles/utils"
 
 const Card = ({ icon, title, children }) => {
   return (
@@ -38,5 +38,5 @@ const styles = {
     ul {
       margin-left: 1.5em;
     }
-  `
+  `,
 }

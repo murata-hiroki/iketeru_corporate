@@ -1,12 +1,8 @@
-import { css } from '@emotion/react'
-import { colors } from '../../styles/utils'
+import { css } from "@emotion/react"
+import { colors } from "../../styles/utils"
 
 const Alert = ({ children, status }) => {
-  return (
-    <p css={styles[status]}>
-      {children}
-    </p>
-  )
+  return <p css={styles[status]}>{children}</p>
 }
 
 export default Alert
@@ -25,5 +21,5 @@ const generateStyle = (color) => css`
 
 const styles = {
   success: generateStyle(colors.purple),
-  error: generateStyle(colors.red)
+  error: generateStyle(colors.red),
 }

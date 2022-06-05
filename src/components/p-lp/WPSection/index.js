@@ -1,1 +1,1 @@
-export { default } from './WPSection'
+export { default } from "./WPSection"

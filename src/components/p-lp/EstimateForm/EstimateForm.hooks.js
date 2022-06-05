@@ -1,14 +1,14 @@
-import axios from 'axios'
-import { useState } from 'react'
+import axios from "axios"
+import { useState } from "react"
 
-const portalId = '21596939'
-const formGuid = '20abaa97-fb7a-470a-8100-4083eada2358'
+const portalId = "21596939"
+const formGuid = "20abaa97-fb7a-470a-8100-4083eada2358"
 const url = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`
 
 const config = {
   headers: {
-    'Message-Type': 'application/json'
-  }
+    "Message-Type": "application/json",
+  },
 }
 
 export const useEstimateForm = () => {
@@ -16,11 +16,11 @@ export const useEstimateForm = () => {
   const [message, setMessage] = useState()
   const [disabled, setDisabled] = useState(false)
 
-  const onSubmit = data => {
-    const fields = Object.keys(data).map(name => {
+  const onSubmit = (data) => {
+    const fields = Object.keys(data).map((name) => {
       return {
         name,
-        value: data[name]
+        value: data[name],
       }
     })
 
@@ -28,14 +28,15 @@ export const useEstimateForm = () => {
 
     setDisabled(true)
 
-    axios.post(url, payload, config)
+    axios
+      .post(url, payload, config)
       .then(() => {
-        setStatus('success')
-        setMessage('送信完了しました。お問い合わせありがとうございます。')
+        setStatus("success")
+        setMessage("送信完了しました。お問い合わせありがとうございます。")
       })
       .catch(() => {
-        setStatus('error')
-        setMessage('エラーが発生しました。時間をおいて再度お試しください。')
+        setStatus("error")
+        setMessage("エラーが発生しました。時間をおいて再度お試しください。")
       })
       .finally(() => setDisabled(false))
   }

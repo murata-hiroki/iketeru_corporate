@@ -1,11 +1,11 @@
-import { css } from '@emotion/react'
-import Container from '../../common/Container'
-import Heading2 from '../../common/Heading2'
-import Section from '../../common/Section'
-import { faqList } from './faqList'
-import IconQ from '../../../inline-svg/icon-q.svg'
-import IconA from '../../../inline-svg/icon-a.svg'
-import { colors, mq } from '../../../styles/utils'
+import { css } from "@emotion/react"
+import Container from "../../common/Container"
+import Heading2 from "../../common/Heading2"
+import Section from "../../common/Section"
+import { faqList } from "./faqList"
+import IconQ from "../../../inline-svg/icon-q.svg"
+import IconA from "../../../inline-svg/icon-a.svg"
+import { colors, mq } from "../../../styles/utils"
 
 const Faq = () => {
   return (
@@ -13,7 +13,7 @@ const Faq = () => {
       <Container>
         <Heading2>よくあるご質問</Heading2>
         <div>
-          {faqList.map(faqItem =>
+          {faqList.map((faqItem) => (
             <section key={faqItem.q} css={styles.item}>
               <h3 css={styles.title}>
                 <span css={styles.textInner}>
@@ -28,7 +28,7 @@ const Faq = () => {
                 </span>
               </p>
             </section>
-          )}
+          ))}
         </div>
       </Container>
     </Section>
@@ -60,7 +60,7 @@ const styles = {
   item: css`
     padding: 40px 30px;
     background-color: ${colors.purple3};
-    &:nth-of-type(n+2) {
+    &:nth-of-type(n + 2) {
       margin-top: 40px;
     }
     ${mq.sm} {
@@ -109,5 +109,5 @@ const styles = {
       width: 21.5px;
       height: 17.5px;
     }
-  `
+  `,
 }

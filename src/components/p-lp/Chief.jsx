@@ -1,8 +1,8 @@
-import { css } from '@emotion/react'
-import { colors, mq } from '../../styles/utils'
-import { StaticImage } from 'gatsby-plugin-image'
-import SubSection from '../common/SubSection'
-import Heading3 from '../common/Heading3'
+import { css } from "@emotion/react"
+import { colors, mq } from "../../styles/utils"
+import { StaticImage } from "gatsby-plugin-image"
+import SubSection from "../common/SubSection"
+import Heading3 from "../common/Heading3"
 
 const Chief = () => {
   return (
@@ -12,8 +12,8 @@ const Chief = () => {
         <div css={styles.media}>
           <div css={styles.image}>
             <StaticImage
-              src='../../images/yuto-ono.jpg'
-              alt='小野 優人'
+              src="../../images/yuto-ono.jpg"
+              alt="小野 優人"
               width={300}
               height={300}
             />
@@ -35,7 +35,8 @@ const Chief = () => {
               IT企業にて、2年間CTO（最高技術責任者）を務める
             </li>
             <li css={styles.historyCurrent}>
-              独立、イケテルシステムを開業<br />
+              独立、イケテルシステムを開業
+              <br />
               質の高いWebサイトを構築する事業を展開
             </li>
           </ul>
@@ -57,7 +58,7 @@ const historyItemBase = css`
     font-size: 16px;
   }
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1;
     top: 5px;
@@ -110,7 +111,7 @@ const styles = {
   historyItem: css`
     ${historyItemBase};
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 20px;
       left: 11px;
@@ -125,5 +126,5 @@ const styles = {
     &::before {
       background-color: ${colors.purple};
     }
-  `
+  `,
 }

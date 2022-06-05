@@ -1,7 +1,7 @@
-import { css } from '@emotion/react'
-import Label from './Label'
-import Textbox from './Textbox'
-import { colors } from '../../styles/utils'
+import { css } from "@emotion/react"
+import Label from "./Label"
+import Textbox from "./Textbox"
+import { colors } from "../../styles/utils"
 
 const InputField = ({
   labelText,
@@ -11,7 +11,7 @@ const InputField = ({
   placeholder = null,
   multiLine = false,
   registerReturn,
-  error = null
+  error = null,
 }) => {
   return (
     <>
@@ -38,5 +38,5 @@ const styles = {
   error: css`
     margin-top: 10px;
     color: ${colors.red};
-  `
+  `,
 }
