@@ -1,13 +1,9 @@
-import { css } from '@emotion/react'
-import { mq } from '../../styles/utils'
+import { css } from "@emotion/react"
+import { mq } from "../../styles/utils"
 
 const Section = ({ children, className, id = null }) => {
   return (
-    <div
-      className={className}
-      css={styles.section}
-      id={id}
-    >
+    <div className={className} css={styles.section} id={id}>
       {children}
     </div>
   )
@@ -23,5 +19,5 @@ const styles = {
       padding-top: 50px;
       padding-bottom: 50px;
     }
-  `
+  `,
 }

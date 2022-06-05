@@ -1,10 +1,10 @@
-import { css } from '@emotion/react'
-import { StaticImage } from 'gatsby-plugin-image'
-import Heading3 from '../common/Heading3'
-import SubSection from '../common/SubSection'
-import ArrowRight from '../../inline-svg/arrow-right.svg'
-import gatsbyLogo from '../../images/gatsby.svg'
-import { colors, mq } from '../../styles/utils'
+import { css } from "@emotion/react"
+import { StaticImage } from "gatsby-plugin-image"
+import Heading3 from "../common/Heading3"
+import SubSection from "../common/SubSection"
+import ArrowRight from "../../inline-svg/arrow-right.svg"
+import gatsbyLogo from "../../images/gatsby.svg"
+import { colors, mq } from "../../styles/utils"
 
 const Migration = () => {
   return (
@@ -13,22 +13,23 @@ const Migration = () => {
       <div css={styles.figure}>
         <div css={styles.wp}>
           <StaticImage
-            src='../../images/wordpress.png'
-            alt='WordPress'
+            src="../../images/wordpress.png"
+            alt="WordPress"
             width={400}
             height={83}
-            placeholder='none'
+            placeholder="none"
           />
         </div>
         <div css={styles.arrow}>
           <ArrowRight />
         </div>
         <div css={styles.gatsby}>
-          <img src={gatsbyLogo} alt='Gatsby' />
+          <img src={gatsbyLogo} alt="Gatsby" />
         </div>
       </div>
       <p css={styles.desc}>
-        イケテルシステムは、WordPress製のサイトをGatsbyに移行するサービスを展開しています。<br />
+        イケテルシステムは、WordPress製のサイトをGatsbyに移行するサービスを展開しています。
+        <br />
         お気軽にご相談ください！
       </p>
     </SubSection>
@@ -93,5 +94,5 @@ const styles = {
       margin-top: 30px;
       font-size: 18px;
     }
-  `
+  `,
 }

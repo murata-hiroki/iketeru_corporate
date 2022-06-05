@@ -1,5 +1,5 @@
-import { css } from '@emotion/react'
-import { colors, mq } from '../../styles/utils'
+import { css } from "@emotion/react"
+import { colors, mq } from "../../styles/utils"
 
 const Heading3 = ({ children }) => {
   return <h3 css={styles.h3}>{children}</h3>
@@ -28,5 +28,5 @@ const styles = {
       background-color: ${colors.purple};
       margin: 5px auto 0;
     }
-  `
+  `,
 }

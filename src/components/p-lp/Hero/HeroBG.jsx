@@ -1,38 +1,38 @@
-import { css } from '@emotion/react'
-import { StaticImage } from 'gatsby-plugin-image'
-import { mq, noFade } from '../../../styles/utils'
+import { css } from "@emotion/react"
+import { StaticImage } from "gatsby-plugin-image"
+import { mq, noFade } from "../../../styles/utils"
 
 const HeroBG = () => {
   return (
     <>
       <div css={styles.bg}>
         <StaticImage
-          src='../../../images/hero-bg.png'
-          alt=''
-          loading='eager'
-          placeholder='none'
-          layout='fullWidth'
-          style={{ height: '100%' }}
+          src="../../../images/hero-bg.png"
+          alt=""
+          loading="eager"
+          placeholder="none"
+          layout="fullWidth"
+          style={{ height: "100%" }}
         />
       </div>
       <div css={styles.left}>
         <StaticImage
-          src='../../../images/hero-left.png'
-          alt=''
-          loading='eager'
-          placeholder='none'
-          layout='fixed'
+          src="../../../images/hero-left.png"
+          alt=""
+          loading="eager"
+          placeholder="none"
+          layout="fixed"
           width={280}
           height={184}
         />
       </div>
       <div css={styles.right}>
         <StaticImage
-          src='../../../images/hero-right.png'
-          alt=''
-          loading='eager'
-          placeholder='none'
-          layout='fixed'
+          src="../../../images/hero-right.png"
+          alt=""
+          loading="eager"
+          placeholder="none"
+          layout="fixed"
           width={354}
           height={282}
         />
@@ -71,5 +71,5 @@ const styles = {
     ${mq.lgDown} {
       display: none !important;
     }
-  `
+  `,
 }

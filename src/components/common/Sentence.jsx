@@ -1,5 +1,5 @@
-import { css } from '@emotion/react'
-import { mq } from '../../styles/utils'
+import { css } from "@emotion/react"
+import { mq } from "../../styles/utils"
 
 const Sentence = ({ children, className }) => {
   return (
@@ -19,9 +19,9 @@ const styles = {
       font-size: 18px;
     }
     p {
-      &:nth-of-type(n+2) {
+      &:nth-of-type(n + 2) {
         margin-top: 30px;
       }
     }
-  `
+  `,
 }

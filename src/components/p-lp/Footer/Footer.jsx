@@ -1,24 +1,22 @@
-import { css } from '@emotion/react'
-import Container from '../../common/Container'
-import Footnote from './Footnote'
-import logo from '../../../images/logo.svg'
-import { colors, mq } from '../../../styles/utils'
+import { css } from "@emotion/react"
+import Container from "../../common/Container"
+import Footnote from "./Footnote"
+import logo from "../../../images/logo.svg"
+import { colors, mq } from "../../../styles/utils"
 
 const Footer = () => {
   return (
-    <footer id='footer'>
+    <footer id="footer">
       <div css={styles.upper}>
         <Container>
           <div css={styles.upperInner}>
             <Footnote />
-            <p css={styles.copyright}>
-              © 2022 イケテルシステム
-            </p>
+            <p css={styles.copyright}>© 2022 イケテルシステム</p>
           </div>
         </Container>
       </div>
       <div css={styles.lower}>
-        <img src={logo} alt='イケテルシステム' />
+        <img src={logo} alt="イケテルシステム" />
       </div>
     </footer>
   )
@@ -52,5 +50,5 @@ const styles = {
   lower: css`
     padding: 30px 20px;
     text-align: center;
-  `
+  `,
 }

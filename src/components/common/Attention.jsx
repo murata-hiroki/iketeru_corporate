@@ -1,11 +1,13 @@
-import { css } from '@emotion/react'
+import { css } from "@emotion/react"
 
 const Attention = ({ items }) => {
   return (
     <ul>
-      {items.map(item =>
-        <li key={item} css={styles.item}>{item}</li>
-      )}
+      {items.map((item) => (
+        <li key={item} css={styles.item}>
+          {item}
+        </li>
+      ))}
     </ul>
   )
 }
@@ -21,7 +23,7 @@ const styles = {
     font-size: 14px;
 
     &::before {
-      content: '※';
+      content: "※";
     }
-  `
+  `,
 }

@@ -1,15 +1,13 @@
-import { css } from '@emotion/react'
-import { Children } from 'react'
-import { mq } from '../../styles/utils'
+import { css } from "@emotion/react"
+import { Children } from "react"
+import { mq } from "../../styles/utils"
 
 const Cards = ({ children }) => {
   return (
     <div css={styles.cards}>
-      {Children.map(children, child =>
-        <div css={styles.cardBox}>
-          {child}
-        </div>
-      )}
+      {Children.map(children, (child) => (
+        <div css={styles.cardBox}>{child}</div>
+      ))}
     </div>
   )
 }
@@ -29,9 +27,9 @@ const styles = {
       width: 30%;
     }
     ${mq.sm} {
-      &:nth-of-type(n+2) {
+      &:nth-of-type(n + 2) {
         margin-top: 50px;
       }
     }
-  `
+  `,
 }

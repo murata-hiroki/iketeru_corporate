@@ -1,17 +1,17 @@
-import { css } from '@emotion/react'
-import { colors, mq } from '../../styles/utils'
+import { css } from "@emotion/react"
+import { colors, mq } from "../../styles/utils"
 
 const Textbox = ({
   id,
   name,
   placeholder,
   multiLine = false,
-  registerReturn
+  registerReturn,
 }) => {
   if (!multiLine) {
     return (
       <input
-        type='text'
+        type="text"
         id={id}
         name={name}
         css={inputStyle}

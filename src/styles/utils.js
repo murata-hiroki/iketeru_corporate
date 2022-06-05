@@ -1,17 +1,17 @@
 // CSSで使用する定数や関数など
 
-import { css } from '@emotion/react'
+import { css } from "@emotion/react"
 
 // 色
 export const colors = {
-  black: '#333',
-  white: '#fff',
-  gray: '#ccc',
-  purple: '#639',
-  purple2: '#d3a9fd',
-  purple3: '#faf5ff',
-  yellow: '#fbfda9',
-  red: '#c00'
+  black: "#333",
+  white: "#fff",
+  gray: "#ccc",
+  purple: "#639",
+  purple2: "#d3a9fd",
+  purple3: "#faf5ff",
+  yellow: "#fbfda9",
+  red: "#c00",
 }
 
 // 幅・ブレークポイント等
@@ -27,7 +27,7 @@ export const mq = {
   smUp: `@media (min-width: ${BP_SM}px)`,
   md: `@media (min-width: ${BP_SM}px) and (max-width: ${BP_LG - 1}px)`,
   lgDown: `@media (max-width: ${BP_LG - 1}px)`,
-  lg: `@media (min-width: ${BP_LG}px)`
+  lg: `@media (min-width: ${BP_LG}px)`,
 }
 
 // ホバー時アンダーライン
