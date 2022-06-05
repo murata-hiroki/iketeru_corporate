@@ -3,31 +3,31 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-const path = require('path')
+const path = require("path")
 
 module.exports = {
   /* Your site config here */
-  jsxRuntime: 'automatic',
-  jsxImportSource: '@emotion/react',
+  jsxRuntime: "automatic",
+  jsxImportSource: "@emotion/react",
   plugins: [
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
-        path: path.join(__dirname, 'src/images')
-      }
+        name: "images",
+        path: path.join(__dirname, "src/images"),
+      },
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /inline-svg\/.*\.svg$/
-        }
-      }
-    }
-  ]
+          include: /inline-svg\/.*\.svg$/,
+        },
+      },
+    },
+  ],
 }
