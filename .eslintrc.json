@@ -9,7 +9,12 @@
     "plugin:react/jsx-runtime",
     "prettier"
   ],
-  "ignorePatterns": [".cache", "node_modules", "public", "gatsby-*.js"],
+  "ignorePatterns": [
+    ".cache",
+    "node_modules",
+    "public",
+    "gatsby-*.js"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
