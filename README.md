@@ -3,7 +3,7 @@
 ## 主な使用技術
 - [Gatsby.js](https://www.gatsbyjs.com/)
   - [React](https://ja.reactjs.org/)
-- [emotion](https://emotion.sh/docs/introduction)
+- [Emotion](https://emotion.sh/docs/introduction)
 
 ## 環境構築手順
 ### システム要件
@@ -15,8 +15,8 @@
 3. `localhost:8000` にアクセスすると、開発サーバーのページが表示されます。
 
 ## Linter, Formatter について
-- ESLint
-- Prettier
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
 を使用し、ソースコード解析とフォーマットを実施しています。  
 `npm run lint` コマンドでESLintとPrettierを実行できます。  
@@ -90,8 +90,24 @@ VSCodeに下記のプラグインをインストールすることを推奨し�
   - どこでも使える共通コンポーネントを格納
 - src/components/p-lp
   - LPに関するコンポーネントのみを格納
+- src/images
+  - 画像ファイルを格納
+- src/inline-svg
+  - インラインSVGとして読み込むファイルを格納
+- src/pages
+  - ページを生成するためのファイル。[Gatsbyで定義されています](https://www.gatsbyjs.com/docs/reference/routing/creating-routes/#define-routes-in-srcpages)。
+- src/styles
+  - グローバルCSSやスタイリングに使う定数など
+- src/utils
+  - 汎用的に使える関数など
 
-ToDo: ディレクトリ構成を追記
+## デプロイについて
+本サイトのホスティングには [Cloudflare Pages](https://pages.cloudflare.com/) を使用しています。  
+GitHubと連携しているため、デプロイは自動的に実行されます。
 
-## ホスティングについて
-ToDo: 後で書く
+### プルリクエスト作成時
+自動的にプレビュー用ビルドが始まります。  
+ビルドが終了すると、プルリクエストへのコメントで Preview URL が発行されます（[こんな感じ](https://github.com/iketeru-system/iketeru_lp/pull/57#issuecomment-1146906616)）。
+
+### mainへのマージ時
+自動的にビルドされ、本番サイトに反映されます。
