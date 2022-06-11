@@ -1,4 +1,4 @@
-import Template from "../components/p-corporate"
+import Template from "../components/p-lp"
 
 const Page = () => {
   return <Template />
